@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.react:react-native-performance:2.1.0-jitsi-10226385@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c4f4696f39621f98571fa7aaf2208943/transformed/jetified-react-native-performance-2.1.0-jitsi-10226385/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c4f4696f39621f98571fa7aaf2208943/transformed/jetified-react-native-performance-2.1.0-jitsi-10226385/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c4f4696f39621f98571fa7aaf2208943/transformed/jetified-react-native-performance-2.1.0-jitsi-10226385/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.react/react-native-performance/2.1.0-jitsi-10226385/eb49658a81e5304d59f58502b0afe9a224f33601/react-native-performance-2.1.0-jitsi-10226385-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/greelogix/Downloads/eclass/eclass App/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "46",
+                        "endOffsets": "97"
+                    }
+                },
+                {
+                    "source": "/Users/greelogix/.gradle/caches/transforms-3/2523b1a1582766e5a359f86c43ab3109/transformed/appcompat-1.5.1/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,126,197,267,337,405",
+                        "endColumns": "70,70,69,69,67,67",
+                        "endOffsets": "121,192,262,332,400,468"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "102,173,244,314,384,452",
+                        "endColumns": "70,70,69,69,67,67",
+                        "endOffsets": "168,239,309,379,447,515"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/greelogix/Downloads/eclass/eclass App/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v29/values-night-v29.xml",
+            "map": [
+                {
+                    "source": "/Users/greelogix/.gradle/caches/transforms-3/cbe7e50eed53d5add30b0c77562c5daf/transformed/jetified-commonlib/res/values-night-v29/values-night-v29.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "277"
+                    }
+                }
+            ]
+        }
+    ]
+}

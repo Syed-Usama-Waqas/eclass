@@ -1,0 +1,1750 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.sekho.app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:5:5-79
+11-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:5:22-77
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:6:5-80
+12-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:7:2-63
+13-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:7:19-61
+14    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+14-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:8:5-74
+14-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:8:22-72
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:9:5-64
+15-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:9:22-62
+16    <uses-permission android:name="android.permission.BLUETOOTH" />
+16-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:10:5-67
+16-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:10:22-65
+17    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+17-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:11:5-73
+17-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:11:22-70
+18    <uses-permission android:name="android.permission.READ_CALENDAR" />
+18-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:12:5-72
+18-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:12:22-69
+19
+20    <queries>
+20-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:14:5-30:15
+21
+22        <!-- If your app opens https URLs -->
+23        <intent>
+23-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:16:9-19:18
+24            <action android:name="android.intent.action.VIEW" />
+24-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:17:13-65
+24-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:17:21-62
+25
+26            <data android:scheme="https" />
+26-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:13-44
+26-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:19-41
+27        </intent>
+28        <!-- If your app makes calls -->
+29        <intent>
+29-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:21:9-24:18
+30            <action android:name="android.intent.action.DIAL" />
+30-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:22:13-65
+30-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:22:21-62
+31
+32            <data android:scheme="tel" />
+32-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:13-44
+32-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:19-41
+33        </intent>
+34        <!-- If your app emails -->
+35        <intent>
+35-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:26:9-29:18
+36            <action android:name="android.intent.action.SEND" />
+36-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:27:13-65
+36-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:27:21-62
+37
+38            <data android:mimeType="*/*" />
+38-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:13-44
+38-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:28:19-41
+39        </intent>
+40        <intent>
+40-->[:file_picker] /Users/greelogix/Downloads/eclass/eclass App/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:10:9-14:18
+41            <action android:name="android.intent.action.GET_CONTENT" />
+41-->[:file_picker] /Users/greelogix/Downloads/eclass/eclass App/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:11:13-72
+41-->[:file_picker] /Users/greelogix/Downloads/eclass/eclass App/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:11:21-69
+42
+43            <data android:mimeType="*/*" />
+43-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:13-44
+43-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:28:19-41
+44        </intent>
+45        <intent>
+45-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:8:9-10:18
+46            <action android:name="android.support.customtabs.action.CustomTabsService" />
+46-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:9:13-90
+46-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:9:21-87
+47        </intent>
+48        <intent>
+48-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:8:9-12:18
+49            <action android:name="android.intent.action.VIEW" />
+49-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:17:13-65
+49-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:17:21-62
+50
+51            <data android:scheme="upi" />
+51-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:13-44
+51-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:19-41
+52        </intent>
+53
+54        <package android:name="com.lcode.allahabadupi" />
+54-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:15:9-58
+54-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:15:18-55
+55        <package android:name="in.amazon.mShop.android.shopping" />
+55-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:16:9-68
+55-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:16:18-65
+56        <package android:name="com.upi.axispay" />
+56-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:17:9-51
+56-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:17:18-48
+57        <package android:name="com.bankofbaroda.upi" />
+57-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:18:9-56
+57-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:18:18-53
+58        <package android:name="in.org.npci.upiapp" />
+58-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:19:9-54
+58-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:19:18-51
+59        <package android:name="com.infra.boiupi" />
+59-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:20:9-52
+59-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:20:18-49
+60        <package android:name="com.infrasofttech.centralbankupi" />
+60-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:21:9-68
+60-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:21:18-65
+61        <package android:name="in.cointab.app" />
+61-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:22:9-50
+61-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:22:18-47
+62        <package android:name="com.lcode.corpupi" />
+62-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:23:9-53
+62-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:23:18-50
+63        <package android:name="com.lcode.csbupi" />
+63-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:24:9-52
+63-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:24:18-49
+64        <package android:name="com.cub.wallet.gui" />
+64-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:25:9-54
+64-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:25:18-51
+65        <package android:name="com.dbs.in.digitalbank" />
+65-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:26:9-58
+65-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:26:18-55
+66        <package android:name="com.olive.dcb.upi" />
+66-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:27:9-53
+66-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:27:18-50
+67        <package android:name="com.equitasbank.upi" />
+67-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:28:9-55
+67-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:28:18-52
+68        <package android:name="com.finopaytech.bpayfino" />
+68-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:29:9-60
+68-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:29:18-57
+69        <package android:name="com.freecharge.android" />
+69-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:30:9-58
+69-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:30:18-55
+70        <package android:name="com.google.android.apps.nbu.paisa.user" />
+70-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:31:9-74
+70-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:31:18-71
+71        <package android:name="com.mgs.hsbcupi" />
+71-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:32:9-51
+71-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:32:18-48
+72        <package android:name="com.csam.icici.bank.imobile" />
+72-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:33:9-63
+72-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:33:18-60
+73        <package android:name="com.mgs.induspsp" />
+73-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:34:9-52
+73-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:34:18-49
+74        <package android:name="com.lcode.smartz" />
+74-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:35:9-52
+74-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:35:18-49
+75        <package android:name="com.khaalijeb.inkdrops" />
+75-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:36:9-58
+75-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:36:18-55
+76        <package android:name="com.msf.kbank.mobile" />
+76-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:37:9-56
+76-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:37:18-53
+77        <package android:name="com.infrasofttech.mahaupi" />
+77-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:38:9-61
+77-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:38:18-58
+78        <package android:name="com.mipay.in.wallet" />
+78-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:39:9-55
+78-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:39:18-52
+79        <package android:name="com.mipay.wallet.in" />
+79-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:40:9-55
+79-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:40:18-52
+80        <package android:name="com.mobikwik_new" />
+80-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:41:9-52
+80-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:41:18-49
+81        <package android:name="com.mgs.obcbank" />
+81-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:42:9-51
+81-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:42:18-48
+82        <package android:name="net.one97.paytm" />
+82-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:43:9-51
+82-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:43:18-48
+83        <package android:name="com.idbibank.paywiz" />
+83-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:44:9-55
+83-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:44:18-52
+84        <package android:name="com.enstage.wibmo.hdfc" />
+84-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:45:9-58
+84-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:45:18-55
+85        <package android:name="com.phonepe.app" />
+85-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:46:9-51
+85-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:46:18-48
+86        <package android:name="com.fss.pnbpsp" />
+86-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:47:9-50
+86-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:47:18-47
+87        <package android:name="com.mobileware.upipsb" />
+87-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:48:9-57
+87-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:48:18-54
+88        <package android:name="com.rblbank.upi" />
+88-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:49:9-51
+88-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:49:18-48
+89        <package android:name="com.realmepay.payments" />
+89-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:50:9-58
+89-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:50:18-55
+90        <package android:name="com.sbi.upi" />
+90-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:51:9-47
+90-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:51:18-44
+91        <package android:name="com.truecaller" />
+91-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:52:9-50
+91-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:52:18-47
+92        <package android:name="com.fss.unbipsp" />
+92-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:53:9-51
+92-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:53:18-48
+93        <package android:name="com.fss.vijayapsp" />
+93-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:54:9-53
+93-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:54:18-50
+94        <package android:name="com.YesBank" /> <!-- Specific apps you interact with, eg: -->
+94-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:55:9-47
+94-->[:upi_india] /Users/greelogix/Downloads/eclass/eclass App/build/upi_india/intermediates/library_manifest/release/AndroidManifest.xml:55:18-44
+95        <package android:name="com.paytm.pgsdk.TransactionManager.PAYTM_APP_PACKAGE" />
+95-->[com.paytm.appinvokesdk:appinvokesdk:1.6.4] /Users/greelogix/.gradle/caches/transforms-3/123773f95098a50bb829d6035855b37b/transformed/jetified-appinvokesdk-1.6.4/AndroidManifest.xml:12:9-88
+95-->[com.paytm.appinvokesdk:appinvokesdk:1.6.4] /Users/greelogix/.gradle/caches/transforms-3/123773f95098a50bb829d6035855b37b/transformed/jetified-appinvokesdk-1.6.4/AndroidManifest.xml:12:18-85
+96        <!--
+97             Specific intents you query for,
+98             eg: for a custom share UI
+99        -->
+100        <intent>
+100-->[com.paytm.appinvokesdk:appinvokesdk:1.6.4] /Users/greelogix/.gradle/caches/transforms-3/123773f95098a50bb829d6035855b37b/transformed/jetified-appinvokesdk-1.6.4/AndroidManifest.xml:17:9-19:18
+101            <action android:name="android.intent.action.MAIN" />
+101-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:96:17-68
+101-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:96:25-66
+102        </intent>
+103        <intent>
+103-->[com.razorpay:checkout:1.6.26] /Users/greelogix/.gradle/caches/transforms-3/66e60c17083b65dbd4c5553a979bdee1/transformed/jetified-checkout-1.6.26/AndroidManifest.xml:12:9-18:18
+104            <action android:name="android.intent.action.VIEW" />
+104-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:17:13-65
+104-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:17:21-62
+105
+106            <data
+106-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:13-44
+107                android:mimeType="*/*"
+107-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:28:19-41
+108                android:scheme="*" />
+108-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:19-41
+109        </intent>
+110        <intent>
+110-->[com.razorpay:checkout:1.6.26] /Users/greelogix/.gradle/caches/transforms-3/66e60c17083b65dbd4c5553a979bdee1/transformed/jetified-checkout-1.6.26/AndroidManifest.xml:19:9-28:18
+111            <action android:name="android.intent.action.VIEW" />
+111-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:17:13-65
+111-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:17:21-62
+112
+113            <category android:name="android.intent.category.BROWSABLE" />
+113-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:114:16-77
+113-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:114:26-74
+114
+115            <data
+115-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:13-44
+116                android:host="pay"
+117                android:mimeType="*/*"
+117-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:28:19-41
+118                android:scheme="upi" />
+118-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:19-41
+119        </intent>
+120
+121        <package android:name="com.facebook.katana" /> <!-- Needs to be explicitly declared on Android R+ -->
+121-->[com.facebook.android:facebook-common:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/16693567438a885655b14cc2818fcd58/transformed/jetified-facebook-common-15.0.2/AndroidManifest.xml:30:9-55
+121-->[com.facebook.android:facebook-common:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/16693567438a885655b14cc2818fcd58/transformed/jetified-facebook-common-15.0.2/AndroidManifest.xml:30:18-52
+122        <package android:name="com.google.android.apps.maps" />
+122-->[com.google.android.gms:play-services-maps:18.1.0] /Users/greelogix/.gradle/caches/transforms-3/0385efa09821d2ce3d7694fc9d23c318/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:9-64
+122-->[com.google.android.gms:play-services-maps:18.1.0] /Users/greelogix/.gradle/caches/transforms-3/0385efa09821d2ce3d7694fc9d23c318/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:18-61
+123
+124        <intent>
+124-->[androidx.media2:media2-session:1.2.0] /Users/greelogix/.gradle/caches/transforms-3/ad950bfc93e91792381f0bac7220f61f/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:25:9-27:18
+125            <action android:name="android.media.browse.MediaBrowserService" />
+125-->[androidx.media2:media2-session:1.2.0] /Users/greelogix/.gradle/caches/transforms-3/ad950bfc93e91792381f0bac7220f61f/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:26:13-79
+125-->[androidx.media2:media2-session:1.2.0] /Users/greelogix/.gradle/caches/transforms-3/ad950bfc93e91792381f0bac7220f61f/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:26:21-76
+126        </intent>
+127        <intent>
+127-->[androidx.media2:media2-session:1.2.0] /Users/greelogix/.gradle/caches/transforms-3/ad950bfc93e91792381f0bac7220f61f/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:28:9-30:18
+128            <action android:name="androidx.media2.session.MediaSessionService" />
+128-->[androidx.media2:media2-session:1.2.0] /Users/greelogix/.gradle/caches/transforms-3/ad950bfc93e91792381f0bac7220f61f/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:29:13-82
+128-->[androidx.media2:media2-session:1.2.0] /Users/greelogix/.gradle/caches/transforms-3/ad950bfc93e91792381f0bac7220f61f/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:29:21-79
+129        </intent>
+130        <intent>
+130-->[androidx.media2:media2-session:1.2.0] /Users/greelogix/.gradle/caches/transforms-3/ad950bfc93e91792381f0bac7220f61f/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:31:9-33:18
+131            <action android:name="androidx.media2.session.MediaLibraryService" />
+131-->[androidx.media2:media2-session:1.2.0] /Users/greelogix/.gradle/caches/transforms-3/ad950bfc93e91792381f0bac7220f61f/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:32:13-82
+131-->[androidx.media2:media2-session:1.2.0] /Users/greelogix/.gradle/caches/transforms-3/ad950bfc93e91792381f0bac7220f61f/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:32:21-79
+132        </intent>
+133        <intent>
+133-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:13:9-15:18
+134            <action android:name="android.media.action.IMAGE_CAPTURE" />
+134-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:14:13-73
+134-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:14:21-70
+135        </intent>
+136        <intent>
+136-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:16:9-18:18
+137            <action android:name="android.settings.action.MANAGE_OVERLAY_PERMISSION" />
+137-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:17:13-88
+137-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:17:21-85
+138        </intent>
+139        <intent>
+139-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:19:9-21:18
+140            <action android:name="android.intent.action.VIEW" />
+140-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:17:13-65
+140-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:17:21-62
+141        </intent>
+142        <intent>
+142-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:22:9-24:18
+143            <action android:name="android.intent.action.SENDTO" />
+143-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:23:13-67
+143-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:23:21-64
+144        </intent>
+145        <intent>
+145-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:28:9-30:18
+146            <action android:name="android.intent.action.EDIT" />
+146-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:29:13-65
+146-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:29:21-62
+147        </intent>
+148        <intent>
+148-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:31:9-33:18
+149            <action android:name="android.intent.action.GET_CONTENT" />
+149-->[:file_picker] /Users/greelogix/Downloads/eclass/eclass App/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:11:13-72
+149-->[:file_picker] /Users/greelogix/Downloads/eclass/eclass App/build/file_picker/intermediates/library_manifest/release/AndroidManifest.xml:11:21-69
+150        </intent>
+151        <intent>
+151-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:34:9-36:18
+152            <action android:name="us.zoom.videomeetings.intent.action.JoinBeforeHost" />
+152-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:35:13-89
+152-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:35:21-86
+153        </intent>
+154        <intent>
+154-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:37:9-39:18
+155            <action android:name="us.zoom.videomeetings.intent.action.CallMyPhone" />
+155-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:38:13-86
+155-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:38:21-83
+156        </intent>
+157        <intent>
+157-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:40:9-42:18
+158            <action android:name="us.zoom.videomeetings.intent.action.MeetingInvite" />
+158-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:41:13-88
+158-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:41:21-85
+159        </intent>
+160    </queries>
+161
+162    <!-- FB Login -->
+163    <queries>
+163-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:14:5-30:15
+164        <provider android:authorities="com.facebook.katana.provider.PlatformProvider" />
+164-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:34:9-89
+164-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:34:19-86
+165    </queries>
+166    <queries>
+166-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:14:5-30:15
+167        <intent>
+167-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:38:9-41:18
+168            <action android:name="android.intent.action.INSERT" />
+168-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:39:13-67
+168-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:39:21-64
+169
+170            <data android:mimeType="vnd.android.cursor.item/event" />
+170-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:13-44
+170-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:28:19-41
+171        </intent>
+172    </queries>
+173
+174    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+174-->[:firebase_analytics] /Users/greelogix/Downloads/eclass/eclass App/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:7:5-79
+174-->[:firebase_analytics] /Users/greelogix/Downloads/eclass/eclass App/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:7:22-76
+175    <uses-permission android:name="android.permission.WAKE_LOCK" />
+175-->[:firebase_analytics] /Users/greelogix/Downloads/eclass/eclass App/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:9:5-68
+175-->[:firebase_analytics] /Users/greelogix/Downloads/eclass/eclass App/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:9:22-65
+176    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS" />
+176-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:14:5-75
+176-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:14:22-72
+177    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+177-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:15:5-80
+177-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:15:22-77
+178    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+178-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:16:5-71
+178-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:16:22-68
+179    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+179-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:18:5-76
+179-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:18:22-73
+180    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+180-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:19:5-77
+180-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:19:22-74
+181
+182    <uses-feature
+182-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:21:5-23:35
+183        android:glEsVersion="0x00020000"
+183-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:22:9-41
+184        android:required="true" />
+184-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:23:9-32
+185    <uses-feature
+185-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:24:5-26:36
+186        android:name="android.hardware.camera"
+186-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:25:9-47
+187        android:required="false" />
+187-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:26:9-33
+188    <uses-feature
+188-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:27:5-29:36
+189        android:name="android.hardware.camera.autofocus"
+189-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:28:9-57
+190        android:required="false" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+190-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:29:9-33
+191    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+191-->[com.google.android.gms:play-services-iid:17.0.0] /Users/greelogix/.gradle/caches/transforms-3/073fef0757c8ec029c0021101eaa412c/transformed/jetified-play-services-iid-17.0.0/AndroidManifest.xml:23:5-82
+191-->[com.google.android.gms:play-services-iid:17.0.0] /Users/greelogix/.gradle/caches/transforms-3/073fef0757c8ec029c0021101eaa412c/transformed/jetified-play-services-iid-17.0.0/AndroidManifest.xml:23:22-79
+192    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+192-->[com.facebook.android:audience-network-sdk:6.12.0] /Users/greelogix/.gradle/caches/transforms-3/a4e1e0c4e1849c4352fc3f17947f7fbe/transformed/jetified-audience-network-sdk-6.12.0/AndroidManifest.xml:17:5-79
+192-->[com.facebook.android:audience-network-sdk:6.12.0] /Users/greelogix/.gradle/caches/transforms-3/a4e1e0c4e1849c4352fc3f17947f7fbe/transformed/jetified-audience-network-sdk-6.12.0/AndroidManifest.xml:17:22-76
+193    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+193-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/greelogix/.gradle/caches/transforms-3/d530dfa0003dcbc76eddbf2647518dc0/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:26:5-110
+193-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/greelogix/.gradle/caches/transforms-3/d530dfa0003dcbc76eddbf2647518dc0/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:26:22-107
+194    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+194-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:27:5-81
+194-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:27:22-78
+195
+196    <permission
+196-->[androidx.core:core:1.9.0] /Users/greelogix/.gradle/caches/transforms-3/b7194fe4beebaf89342a17166d80689a/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+197        android:name="com.sekho.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+197-->[androidx.core:core:1.9.0] /Users/greelogix/.gradle/caches/transforms-3/b7194fe4beebaf89342a17166d80689a/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+198        android:protectionLevel="signature" />
+198-->[androidx.core:core:1.9.0] /Users/greelogix/.gradle/caches/transforms-3/b7194fe4beebaf89342a17166d80689a/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+199
+200    <uses-permission android:name="com.sekho.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+200-->[androidx.core:core:1.9.0] /Users/greelogix/.gradle/caches/transforms-3/b7194fe4beebaf89342a17166d80689a/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+200-->[androidx.core:core:1.9.0] /Users/greelogix/.gradle/caches/transforms-3/b7194fe4beebaf89342a17166d80689a/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+201
+202    <uses-feature
+202-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:52:5-54:36
+203        android:name="android.hardware.telephony"
+203-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:53:9-50
+204        android:required="false" />
+204-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:54:9-33
+205    <uses-feature
+205-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:55:5-57:36
+206        android:name="android.hardware.bluetooth"
+206-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:56:9-50
+207        android:required="false" />
+207-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:57:9-33
+208    <uses-feature
+208-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:58:5-60:36
+209        android:name="android.hardware.microphone"
+209-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:59:9-51
+210        android:required="false" />
+210-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:60:9-33
+211
+212    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+212-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:72:5-74
+212-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:72:22-71
+213    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+213-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:73:5-75
+213-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:73:22-72
+214    <uses-permission android:name="android.permission.CALL_PHONE" />
+214-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:75:5-69
+214-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:75:22-66
+215    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+215-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:76:5-78
+215-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:76:22-75
+216    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+216-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:78:5-81
+216-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:78:22-78
+217    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+217-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:79:5-85
+217-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:79:22-82
+218
+219    <application
+219-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:44:4-138:19
+220        android:allowBackup="false"
+220-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:46:8-35
+221        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+221-->[androidx.core:core:1.9.0] /Users/greelogix/.gradle/caches/transforms-3/b7194fe4beebaf89342a17166d80689a/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+222        android:extractNativeLibs="false"
+223        android:hardwareAccelerated="true"
+223-->[:facebook_audience_network] /Users/greelogix/Downloads/eclass/eclass App/build/facebook_audience_network/intermediates/library_manifest/release/AndroidManifest.xml:7:18-52
+224        android:icon="@mipmap/ic_launcher"
+224-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:48:8-42
+225        android:label="Sekho"
+225-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:45:8-29
+226        android:largeHeap="true"
+226-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:50:8-32
+227        android:networkSecurityConfig="@xml/network_security_config"
+227-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:83:9-69
+228        android:resizeableActivity="true"
+228-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:84:9-42
+229        android:supportsRtl="true"
+229-->[lk.payhere:androidsdk:3.0.4] /Users/greelogix/.gradle/caches/transforms-3/8f908ffc5bac42f51e3c9fc303e2b1e6/transformed/jetified-androidsdk-3.0.4/AndroidManifest.xml:15:9-35
+230        android:usesCleartextTraffic="false" >
+230-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:85:9-45
+231
+232        <!-- Only add it if you need Auto OTP reading feature is enabled -->
+233        <meta-data
+233-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:53:8-54:68
+234            android:name="com.google.android.gms.version"
+234-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:53:19-64
+235            android:value="@integer/google_play_services_version" />
+235-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:54:12-65
+236
+237        <!-- Google Map -->
+238        <meta-data
+238-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:57:8-58:59
+239            android:name="com.google.android.geo.API_KEY"
+239-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:57:19-64
+240            android:value="ENTER_GOOGLE_MAP_API_KEY_HERE" />
+240-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:58:12-57
+241
+242        <provider
+243            android:name="vn.hunghd.flutterdownloader.DownloadedFileProvider"
+243-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:61:12-77
+244            android:authorities="com.sekho.app.flutter_downloader.provider"
+244-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:62:12-78
+245            android:exported="false"
+245-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:63:12-36
+246            android:grantUriPermissions="true" >
+246-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:64:12-46
+247            <meta-data
+247-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:65:12-67:56
+248                android:name="android.support.FILE_PROVIDER_PATHS"
+248-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:66:16-66
+249                android:resource="@xml/provider_paths" />
+249-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:67:16-54
+250        </provider>
+251
+252        <activity
+252-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:70:9-99:20
+253            android:name="com.sekho.app.MainActivity"
+253-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:71:13-41
+254            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+254-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:75:13-163
+255            android:exported="true"
+255-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:72:13-36
+256            android:hardwareAccelerated="true"
+256-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:76:13-47
+257            android:launchMode="singleTop"
+257-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:73:13-43
+258            android:theme="@style/LaunchTheme"
+258-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:74:13-47
+259            android:windowSoftInputMode="adjustResize" >
+259-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:77:13-55
+260
+261            <!--
+262                 Specifies an Android theme to apply to this Activity as soon as
+263                 the Android process has started. This theme is visible to the user
+264                 while the Flutter UI initializes. After that, this theme continues
+265                 to determine the Window background behind the Flutter UI.
+266            -->
+267            <meta-data
+267-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:82:13-85:17
+268                android:name="io.flutter.embedding.android.NormalTheme"
+268-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:83:15-70
+269                android:resource="@style/NormalTheme" />
+269-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:84:15-52
+270            <!--
+271                 Displays an Android View that continues showing the launch screen
+272                 Drawable until Flutter paints its first frame, then this splash
+273                 screen fades out. A splash screen is useful to avoid any visual
+274                 gap between the end of Android's launch screen and the painting of
+275                 Flutter's first frame.
+276            -->
+277            <meta-data
+277-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:91:13-94:17
+278                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+278-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:92:15-79
+279                android:resource="@drawable/launch_background" />
+279-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:93:15-61
+280
+281            <intent-filter>
+281-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:95:13-98:29
+282                <action android:name="android.intent.action.MAIN" />
+282-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:96:17-68
+282-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:96:25-66
+283
+284                <category android:name="android.intent.category.LAUNCHER" />
+284-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:97:17-76
+284-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:97:27-74
+285            </intent-filter>
+286        </activity>
+287
+288        <!-- Facebook Login -->
+289        <meta-data
+289-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:102:8-106
+290            android:name="com.facebook.sdk.ApplicationId"
+290-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:102:19-64
+291            android:value="@string/facebook_app_id" />
+291-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:102:65-104
+292        <meta-data
+292-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:103:8-110
+293            android:name="com.facebook.sdk.ClientToken"
+293-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:103:19-62
+294            android:value="@string/facebook_client_token" />
+294-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:103:63-108
+295
+296        <activity
+296-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:105:8-107:47
+297            android:name="com.facebook.FacebookActivity"
+297-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:105:18-62
+298            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+298-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:106:12-95
+299            android:label="@string/app_name"
+299-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:107:12-44
+300            android:theme="@style/com_facebook_activity_theme" />
+300-->[com.facebook.android:facebook-common:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/16693567438a885655b14cc2818fcd58/transformed/jetified-facebook-common-15.0.2/AndroidManifest.xml:37:13-63
+301        <activity
+301-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:108:8-117:19
+302            android:name="com.facebook.CustomTabActivity"
+302-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:109:12-57
+303            android:exported="true" >
+303-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:110:12-35
+304            <intent-filter>
+304-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:111:12-116:28
+305                <action android:name="android.intent.action.VIEW" />
+305-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:17:13-65
+305-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:17:21-62
+306
+307                <category android:name="android.intent.category.DEFAULT" />
+307-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:113:16-75
+307-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:113:26-72
+308                <category android:name="android.intent.category.BROWSABLE" />
+308-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:114:16-77
+308-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:114:26-74
+309
+310                <data android:scheme="@string/fb_login_protocol_scheme" />
+310-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:13-44
+310-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:19-41
+311            </intent-filter>
+312            <intent-filter>
+312-->[com.facebook.android:facebook-common:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/16693567438a885655b14cc2818fcd58/transformed/jetified-facebook-common-15.0.2/AndroidManifest.xml:43:13-52:29
+313                <action android:name="android.intent.action.VIEW" />
+313-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:17:13-65
+313-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:17:21-62
+314
+315                <category android:name="android.intent.category.DEFAULT" />
+315-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:113:16-75
+315-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:113:26-72
+316                <category android:name="android.intent.category.BROWSABLE" />
+316-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:114:16-77
+316-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:114:26-74
+317
+318                <data
+318-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:13-44
+319                    android:host="cct.com.sekho.app"
+320                    android:scheme="fbconnect" />
+320-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:19-41
+321            </intent-filter>
+322        </activity>
+323        <!-- Facebook Login End -->
+324
+325
+326        <!--
+327             Don't delete the meta-data below.
+328             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+329        -->
+330        <meta-data
+330-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:122:9-124:33
+331            android:name="flutterEmbedding"
+331-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:123:13-44
+332            android:value="2" />
+332-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:124:13-30
+333
+334        <!-- Flutter Downloader Configurations -->
+335        <!-- In order to handle click action on notification to open the downloaded file on Android, you need to add some additional configurations. -->
+336        <provider
+337            android:name="vn.hunghd.flutterdownloader.DownloadedFileProvider"
+337-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:61:12-77
+338            android:authorities="com.sekho.app.flutter_downloader.provider"
+338-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:62:12-78
+339            android:exported="false"
+339-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:63:12-36
+340            android:grantUriPermissions="true" >
+340-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:64:12-46
+341            <meta-data
+341-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:65:12-67:56
+342                android:name="android.support.FILE_PROVIDER_PATHS"
+342-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:66:16-66
+343                android:resource="@xml/provider_paths" />
+343-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:67:16-54
+344        </provider>
+345
+346        <service
+346-->[:firebase_analytics] /Users/greelogix/Downloads/eclass/eclass App/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:12:9-16:19
+347            android:name="com.google.firebase.components.ComponentDiscoveryService"
+347-->[:firebase_analytics] /Users/greelogix/Downloads/eclass/eclass App/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:12:18-89
+348            android:directBootAware="true"
+348-->[com.google.firebase:firebase-common:20.2.0] /Users/greelogix/.gradle/caches/transforms-3/8cdcc2d3771f6ae79143c66aa17501b8/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:34:13-43
+349            android:exported="false" >
+349-->[com.google.firebase:firebase-auth:21.1.0] /Users/greelogix/.gradle/caches/transforms-3/cf99c3ccad99d474f2aad12eeb8e4b59/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:66:13-37
+350            <meta-data
+350-->[:firebase_analytics] /Users/greelogix/Downloads/eclass/eclass App/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:13:13-15:85
+351                android:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar"
+351-->[:firebase_analytics] /Users/greelogix/Downloads/eclass/eclass App/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:14:17-128
+352                android:value="com.google.firebase.components.ComponentRegistrar" />
+352-->[:firebase_analytics] /Users/greelogix/Downloads/eclass/eclass App/build/firebase_analytics/intermediates/library_manifest/release/AndroidManifest.xml:15:17-82
+353            <meta-data
+353-->[:firebase_auth] /Users/greelogix/Downloads/eclass/eclass App/build/firebase_auth/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+354                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+354-->[:firebase_auth] /Users/greelogix/Downloads/eclass/eclass App/build/firebase_auth/intermediates/library_manifest/release/AndroidManifest.xml:10:17-124
+355                android:value="com.google.firebase.components.ComponentRegistrar" />
+355-->[:firebase_auth] /Users/greelogix/Downloads/eclass/eclass App/build/firebase_auth/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+356            <meta-data
+356-->[:firebase_core] /Users/greelogix/Downloads/eclass/eclass App/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+357                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+357-->[:firebase_core] /Users/greelogix/Downloads/eclass/eclass App/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:10:17-124
+358                android:value="com.google.firebase.components.ComponentRegistrar" />
+358-->[:firebase_core] /Users/greelogix/Downloads/eclass/eclass App/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+359            <meta-data
+359-->[com.google.firebase:firebase-auth:21.1.0] /Users/greelogix/.gradle/caches/transforms-3/cf99c3ccad99d474f2aad12eeb8e4b59/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:67:13-69:85
+360                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+360-->[com.google.firebase:firebase-auth:21.1.0] /Users/greelogix/.gradle/caches/transforms-3/cf99c3ccad99d474f2aad12eeb8e4b59/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:68:17-109
+361                android:value="com.google.firebase.components.ComponentRegistrar" />
+361-->[com.google.firebase:firebase-auth:21.1.0] /Users/greelogix/.gradle/caches/transforms-3/cf99c3ccad99d474f2aad12eeb8e4b59/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:69:17-82
+362            <meta-data
+362-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/greelogix/.gradle/caches/transforms-3/0f22e9e6e3aeeb2beb49ee2d7fccbe03/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:31:13-33:85
+363                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+363-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/greelogix/.gradle/caches/transforms-3/0f22e9e6e3aeeb2beb49ee2d7fccbe03/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:32:17-139
+364                android:value="com.google.firebase.components.ComponentRegistrar" />
+364-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/greelogix/.gradle/caches/transforms-3/0f22e9e6e3aeeb2beb49ee2d7fccbe03/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:33:17-82
+365            <meta-data
+365-->[com.google.firebase:firebase-installations:17.1.0] /Users/greelogix/.gradle/caches/transforms-3/32c3e922501267a873144916cb0e8eb1/transformed/jetified-firebase-installations-17.1.0/AndroidManifest.xml:17:13-19:85
+366                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+366-->[com.google.firebase:firebase-installations:17.1.0] /Users/greelogix/.gradle/caches/transforms-3/32c3e922501267a873144916cb0e8eb1/transformed/jetified-firebase-installations-17.1.0/AndroidManifest.xml:18:17-127
+367                android:value="com.google.firebase.components.ComponentRegistrar" />
+367-->[com.google.firebase:firebase-installations:17.1.0] /Users/greelogix/.gradle/caches/transforms-3/32c3e922501267a873144916cb0e8eb1/transformed/jetified-firebase-installations-17.1.0/AndroidManifest.xml:19:17-82
+368        </service>
+369
+370        <activity
+370-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:14:9-18:47
+371            android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
+371-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:15:13-104
+372            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
+372-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:16:13-137
+373            android:exported="false"
+373-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:17:13-37
+374            android:theme="@style/AppTheme" />
+374-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:18:13-44
+375        <activity
+375-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:19:9-22:55
+376            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
+376-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:20:13-112
+377            android:exported="false"
+377-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:21:13-37
+378            android:theme="@style/ThemeTransparent" />
+378-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:22:13-52
+379        <activity
+379-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:23:9-26:55
+380            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity"
+380-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:24:13-106
+381            android:exported="false"
+381-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:25:13-37
+382            android:theme="@style/ThemeTransparent" />
+382-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:26:13-52
+383        <activity
+383-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:27:9-31:55
+384            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
+384-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:28:13-126
+385            android:exported="false"
+385-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:29:13-37
+386            android:launchMode="singleInstance"
+386-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:30:13-48
+387            android:theme="@style/ThemeTransparent" />
+387-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:31:13-52
+388        <activity
+388-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:32:9-36:55
+389            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance"
+389-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:33:13-120
+390            android:exported="false"
+390-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:34:13-37
+391            android:launchMode="singleInstance"
+391-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:35:13-48
+392            android:theme="@style/ThemeTransparent" />
+392-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:36:13-52
+393
+394        <receiver
+394-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:38:9-41:40
+395            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver"
+395-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:39:13-111
+396            android:enabled="true"
+396-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:40:13-35
+397            android:exported="false" />
+397-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:41:13-37
+398
+399        <meta-data
+399-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:43:9-45:36
+400            android:name="io.flutter.embedded_views_preview"
+400-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:44:13-61
+401            android:value="true" />
+401-->[:flutter_inappwebview] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:45:13-33
+402        <!--
+403           Declares a provider which allows us to store files to share in
+404           '.../caches/share_plus' and grant the receiving action access
+405        -->
+406        <provider
+406-->[:share_plus] /Users/greelogix/Downloads/eclass/eclass App/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:13:9-21:20
+407            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+407-->[:share_plus] /Users/greelogix/Downloads/eclass/eclass App/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:14:13-77
+408            android:authorities="com.sekho.app.flutter.share_provider"
+408-->[:share_plus] /Users/greelogix/Downloads/eclass/eclass App/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:15:13-74
+409            android:exported="false"
+409-->[:share_plus] /Users/greelogix/Downloads/eclass/eclass App/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:16:13-37
+410            android:grantUriPermissions="true" >
+410-->[:share_plus] /Users/greelogix/Downloads/eclass/eclass App/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:17:13-47
+411            <meta-data
+411-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:65:12-67:56
+412                android:name="android.support.FILE_PROVIDER_PATHS"
+412-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:66:16-66
+413                android:resource="@xml/flutter_share_file_paths" />
+413-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:67:16-54
+414        </provider>
+415        <!--
+416           This manifest declared broadcast receiver allows us to use an explicit
+417           Intent when creating a PendingItent to be informed of the user's choice
+418        -->
+419        <receiver
+419-->[:share_plus] /Users/greelogix/Downloads/eclass/eclass App/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:26:9-32:20
+420            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
+420-->[:share_plus] /Users/greelogix/Downloads/eclass/eclass App/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:27:13-82
+421            android:exported="true" >
+421-->[:share_plus] /Users/greelogix/Downloads/eclass/eclass App/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:28:13-36
+422            <intent-filter>
+422-->[:share_plus] /Users/greelogix/Downloads/eclass/eclass App/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:29:13-31:29
+423                <action android:name="EXTRA_CHOSEN_COMPONENT" />
+423-->[:share_plus] /Users/greelogix/Downloads/eclass/eclass App/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:30:17-65
+423-->[:share_plus] /Users/greelogix/Downloads/eclass/eclass App/build/share_plus/intermediates/library_manifest/release/AndroidManifest.xml:30:25-62
+424            </intent-filter>
+425        </receiver>
+426
+427        <provider
+427-->[:image_picker_android] /Users/greelogix/Downloads/eclass/eclass App/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:8:9-16:20
+428            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+428-->[:image_picker_android] /Users/greelogix/Downloads/eclass/eclass App/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:9:13-82
+429            android:authorities="com.sekho.app.flutter.image_provider"
+429-->[:image_picker_android] /Users/greelogix/Downloads/eclass/eclass App/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:10:13-74
+430            android:exported="false"
+430-->[:image_picker_android] /Users/greelogix/Downloads/eclass/eclass App/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:11:13-37
+431            android:grantUriPermissions="true" >
+431-->[:image_picker_android] /Users/greelogix/Downloads/eclass/eclass App/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:12:13-47
+432            <meta-data
+432-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:65:12-67:56
+433                android:name="android.support.FILE_PROVIDER_PATHS"
+433-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:66:16-66
+434                android:resource="@xml/flutter_image_picker_file_paths" />
+434-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:67:16-54
+435        </provider>
+436
+437        <activity
+437-->[:flutter_paystack] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_paystack/intermediates/library_manifest/release/AndroidManifest.xml:10:9-12:54
+438            android:name="co.paystack.flutterpaystack.AuthActivity"
+438-->[:flutter_paystack] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_paystack/intermediates/library_manifest/release/AndroidManifest.xml:11:13-68
+439            android:theme="@style/Paystack.Dialog" />
+439-->[:flutter_paystack] /Users/greelogix/Downloads/eclass/eclass App/build/flutter_paystack/intermediates/library_manifest/release/AndroidManifest.xml:12:13-51
+440        <activity
+440-->[:url_launcher_android] /Users/greelogix/Downloads/eclass/eclass App/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:8:9-11:74
+441            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+441-->[:url_launcher_android] /Users/greelogix/Downloads/eclass/eclass App/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:9:13-74
+442            android:exported="false"
+442-->[:url_launcher_android] /Users/greelogix/Downloads/eclass/eclass App/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:10:13-37
+443            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" /> <!-- some config changes are required for PiP (https://developer.android.com/guide/topics/ui/picture-in-picture#single_playback) -->
+443-->[:url_launcher_android] /Users/greelogix/Downloads/eclass/eclass App/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:11:13-71
+444        <!-- Need autoRemoveFromRecents, otherwise an extra task for the jitsi view will stay open -->
+445        <activity
+445-->[:jitsi_meet_wrapper] /Users/greelogix/Downloads/eclass/eclass App/build/jitsi_meet_wrapper/intermediates/library_manifest/release/AndroidManifest.xml:11:9-20:20
+446            android:name="dev.saibotma.jitsi_meet_wrapper.JitsiMeetWrapperActivity"
+446-->[:jitsi_meet_wrapper] /Users/greelogix/Downloads/eclass/eclass App/build/jitsi_meet_wrapper/intermediates/library_manifest/release/AndroidManifest.xml:12:13-84
+447            android:autoRemoveFromRecents="true"
+447-->[:jitsi_meet_wrapper] /Users/greelogix/Downloads/eclass/eclass App/build/jitsi_meet_wrapper/intermediates/library_manifest/release/AndroidManifest.xml:13:13-49
+448            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+448-->[:jitsi_meet_wrapper] /Users/greelogix/Downloads/eclass/eclass App/build/jitsi_meet_wrapper/intermediates/library_manifest/release/AndroidManifest.xml:14:13-115
+449            android:exported="false"
+449-->[:jitsi_meet_wrapper] /Users/greelogix/Downloads/eclass/eclass App/build/jitsi_meet_wrapper/intermediates/library_manifest/release/AndroidManifest.xml:15:13-37
+450            android:resizeableActivity="true"
+450-->[:jitsi_meet_wrapper] /Users/greelogix/Downloads/eclass/eclass App/build/jitsi_meet_wrapper/intermediates/library_manifest/release/AndroidManifest.xml:16:13-46
+451            android:supportsPictureInPicture="true"
+451-->[:jitsi_meet_wrapper] /Users/greelogix/Downloads/eclass/eclass App/build/jitsi_meet_wrapper/intermediates/library_manifest/release/AndroidManifest.xml:17:13-52
+452            android:theme="@style/MeetingTheme"
+452-->[:jitsi_meet_wrapper] /Users/greelogix/Downloads/eclass/eclass App/build/jitsi_meet_wrapper/intermediates/library_manifest/release/AndroidManifest.xml:18:13-48
+453            android:windowSoftInputMode="adjustResize" >
+453-->[:jitsi_meet_wrapper] /Users/greelogix/Downloads/eclass/eclass App/build/jitsi_meet_wrapper/intermediates/library_manifest/release/AndroidManifest.xml:19:13-55
+454        </activity>
+455        <activity
+455-->[com.paytm.appinvokesdk:appinvokesdk:1.6.4] /Users/greelogix/.gradle/caches/transforms-3/123773f95098a50bb829d6035855b37b/transformed/jetified-appinvokesdk-1.6.4/AndroidManifest.xml:23:9-26:66
+456            android:name="com.paytm.pgsdk.PaytmPGActivity"
+456-->[com.paytm.appinvokesdk:appinvokesdk:1.6.4] /Users/greelogix/.gradle/caches/transforms-3/123773f95098a50bb829d6035855b37b/transformed/jetified-appinvokesdk-1.6.4/AndroidManifest.xml:24:13-59
+457            android:screenOrientation="portrait"
+457-->[com.paytm.appinvokesdk:appinvokesdk:1.6.4] /Users/greelogix/.gradle/caches/transforms-3/123773f95098a50bb829d6035855b37b/transformed/jetified-appinvokesdk-1.6.4/AndroidManifest.xml:25:13-49
+458            android:theme="@style/Theme.AppCompat.NoActionBar" />
+458-->[com.paytm.appinvokesdk:appinvokesdk:1.6.4] /Users/greelogix/.gradle/caches/transforms-3/123773f95098a50bb829d6035855b37b/transformed/jetified-appinvokesdk-1.6.4/AndroidManifest.xml:26:13-63
+459        <activity
+459-->[com.paytm.appinvokesdk:appinvokesdk:1.6.4] /Users/greelogix/.gradle/caches/transforms-3/123773f95098a50bb829d6035855b37b/transformed/jetified-appinvokesdk-1.6.4/AndroidManifest.xml:27:9-29:63
+460            android:name="com.paytm.pgsdk.AioMatchUserActivity"
+460-->[com.paytm.appinvokesdk:appinvokesdk:1.6.4] /Users/greelogix/.gradle/caches/transforms-3/123773f95098a50bb829d6035855b37b/transformed/jetified-appinvokesdk-1.6.4/AndroidManifest.xml:28:13-64
+461            android:theme="@style/TransparentActivityTheme" />
+461-->[com.paytm.appinvokesdk:appinvokesdk:1.6.4] /Users/greelogix/.gradle/caches/transforms-3/123773f95098a50bb829d6035855b37b/transformed/jetified-appinvokesdk-1.6.4/AndroidManifest.xml:29:13-60
+462
+463        <service
+463-->[com.paytm.appinvokesdk:appinvokesdk:1.6.4] /Users/greelogix/.gradle/caches/transforms-3/123773f95098a50bb829d6035855b37b/transformed/jetified-appinvokesdk-1.6.4/AndroidManifest.xml:31:9-33:40
+464            android:name="com.paytm.pgsdk.IntentServicePostNotification"
+464-->[com.paytm.appinvokesdk:appinvokesdk:1.6.4] /Users/greelogix/.gradle/caches/transforms-3/123773f95098a50bb829d6035855b37b/transformed/jetified-appinvokesdk-1.6.4/AndroidManifest.xml:32:13-73
+465            android:exported="false" />
+465-->[com.paytm.appinvokesdk:appinvokesdk:1.6.4] /Users/greelogix/.gradle/caches/transforms-3/123773f95098a50bb829d6035855b37b/transformed/jetified-appinvokesdk-1.6.4/AndroidManifest.xml:33:13-37
+466        <service
+466-->[com.paytm.appinvokesdk:appinvokesdk:1.6.4] /Users/greelogix/.gradle/caches/transforms-3/123773f95098a50bb829d6035855b37b/transformed/jetified-appinvokesdk-1.6.4/AndroidManifest.xml:34:9-36:40
+467            android:name="com.paytm.pgsdk.IntentServicePreNotification"
+467-->[com.paytm.appinvokesdk:appinvokesdk:1.6.4] /Users/greelogix/.gradle/caches/transforms-3/123773f95098a50bb829d6035855b37b/transformed/jetified-appinvokesdk-1.6.4/AndroidManifest.xml:35:13-72
+468            android:exported="false" />
+468-->[com.paytm.appinvokesdk:appinvokesdk:1.6.4] /Users/greelogix/.gradle/caches/transforms-3/123773f95098a50bb829d6035855b37b/transformed/jetified-appinvokesdk-1.6.4/AndroidManifest.xml:36:13-37
+469
+470        <activity
+470-->[lk.payhere:androidsdk:3.0.4] /Users/greelogix/.gradle/caches/transforms-3/8f908ffc5bac42f51e3c9fc303e2b1e6/transformed/jetified-androidsdk-3.0.4/AndroidManifest.xml:16:9-19:65
+471            android:name="lk.payhere.androidsdk.PHMainActivity"
+471-->[lk.payhere:androidsdk:3.0.4] /Users/greelogix/.gradle/caches/transforms-3/8f908ffc5bac42f51e3c9fc303e2b1e6/transformed/jetified-androidsdk-3.0.4/AndroidManifest.xml:17:13-64
+472            android:launchMode="singleTop"
+472-->[lk.payhere:androidsdk:3.0.4] /Users/greelogix/.gradle/caches/transforms-3/8f908ffc5bac42f51e3c9fc303e2b1e6/transformed/jetified-androidsdk-3.0.4/AndroidManifest.xml:18:13-43
+473            android:theme="@style/ph_transparent.windowTitle" />
+473-->[lk.payhere:androidsdk:3.0.4] /Users/greelogix/.gradle/caches/transforms-3/8f908ffc5bac42f51e3c9fc303e2b1e6/transformed/jetified-androidsdk-3.0.4/AndroidManifest.xml:19:13-62
+474        <activity
+474-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:35:9-41:58
+475            android:name="org.jitsi.meet.sdk.JitsiMeetActivity"
+475-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:36:13-64
+476            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+476-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:37:13-115
+477            android:launchMode="singleTask"
+477-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:38:13-44
+478            android:resizeableActivity="true"
+478-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:39:13-46
+479            android:supportsPictureInPicture="true"
+479-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:40:13-52
+480            android:windowSoftInputMode="adjustResize" />
+480-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:41:13-55
+481
+482        <service
+482-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:43:9-50:19
+483            android:name="org.jitsi.meet.sdk.ConnectionService"
+483-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:44:13-64
+484            android:exported="true"
+484-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:45:13-36
+485            android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE" >
+485-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:46:13-84
+486            <intent-filter>
+486-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:47:13-49:29
+487                <action android:name="android.telecom.ConnectionService" />
+487-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:48:17-76
+487-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:48:25-73
+488            </intent-filter>
+489        </service>
+490        <service
+490-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:51:9-53:63
+491            android:name="org.jitsi.meet.sdk.JitsiMeetOngoingConferenceService"
+491-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:52:13-80
+492            android:foregroundServiceType="mediaProjection" />
+492-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:53:13-60
+493
+494        <provider
+494-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:55:9-60:20
+495            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+495-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:56:13-83
+496            android:authorities="com.sekho.app.fileprovider"
+496-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:57:13-64
+497            android:enabled="false"
+497-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:58:13-36
+498            android:exported="false"
+498-->[com.facebook.react:react-native-webview:11.15.1-jitsi-10226385] /Users/greelogix/.gradle/caches/transforms-3/fee5ca167e6bbd668150a29618fec725/transformed/jetified-react-native-webview-11.15.1-jitsi-10226385/AndroidManifest.xml:13:13-37
+499            android:grantUriPermissions="true" >
+499-->[com.facebook.react:react-native-webview:11.15.1-jitsi-10226385] /Users/greelogix/.gradle/caches/transforms-3/fee5ca167e6bbd668150a29618fec725/transformed/jetified-react-native-webview-11.15.1-jitsi-10226385/AndroidManifest.xml:14:13-47
+500            <meta-data
+500-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:65:12-67:56
+501                android:name="android.support.FILE_PROVIDER_PATHS"
+501-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:66:16-66
+502                android:resource="@xml/file_provider_paths" />
+502-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:67:16-54
+503        </provider>
+504        <provider
+504-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:61:9-68:20
+505            android:name="androidx.startup.InitializationProvider"
+505-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:62:13-67
+506            android:authorities="com.sekho.app.androidx-startup"
+506-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:63:13-68
+507            android:exported="false" >
+507-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:64:13-37
+508            <meta-data
+508-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:65:13-67:52
+509                android:name="org.jitsi.meet.sdk.JitsiInitializer"
+509-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:66:17-67
+510                android:value="androidx.startup" />
+510-->[org.jitsi.react:jitsi-meet-sdk:5.0.2] /Users/greelogix/.gradle/caches/transforms-3/7accb7c8a68a559bbab1e935bb313131/transformed/jetified-jitsi-meet-sdk-5.0.2/AndroidManifest.xml:67:17-49
+511            <meta-data
+511-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:36:13-38:52
+512                android:name="androidx.work.WorkManagerInitializer"
+512-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:37:17-68
+513                android:value="androidx.startup" />
+513-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:38:17-49
+514            <meta-data
+514-->[androidx.emoji2:emoji2:1.2.0] /Users/greelogix/.gradle/caches/transforms-3/e2c11062697e11d1d247164d1cb19695/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+515                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+515-->[androidx.emoji2:emoji2:1.2.0] /Users/greelogix/.gradle/caches/transforms-3/e2c11062697e11d1d247164d1cb19695/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+516                android:value="androidx.startup" />
+516-->[androidx.emoji2:emoji2:1.2.0] /Users/greelogix/.gradle/caches/transforms-3/e2c11062697e11d1d247164d1cb19695/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+517            <meta-data
+517-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/greelogix/.gradle/caches/transforms-3/0822e91d329f302e564f7aa3e9c5f0ae/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+518                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+518-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/greelogix/.gradle/caches/transforms-3/0822e91d329f302e564f7aa3e9c5f0ae/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+519                android:value="androidx.startup" />
+519-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/greelogix/.gradle/caches/transforms-3/0822e91d329f302e564f7aa3e9c5f0ae/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+520        </provider>
+521        <provider
+521-->[com.facebook.react:react-native-performance:2.1.0-jitsi-10226385] /Users/greelogix/.gradle/caches/transforms-3/c4f4696f39621f98571fa7aaf2208943/transformed/jetified-react-native-performance-2.1.0-jitsi-10226385/AndroidManifest.xml:10:9-14:39
+522            android:name="com.oblador.performance.StartTimeProvider"
+522-->[com.facebook.react:react-native-performance:2.1.0-jitsi-10226385] /Users/greelogix/.gradle/caches/transforms-3/c4f4696f39621f98571fa7aaf2208943/transformed/jetified-react-native-performance-2.1.0-jitsi-10226385/AndroidManifest.xml:11:13-69
+523            android:authorities="com.sekho.app.start.time.provider"
+523-->[com.facebook.react:react-native-performance:2.1.0-jitsi-10226385] /Users/greelogix/.gradle/caches/transforms-3/c4f4696f39621f98571fa7aaf2208943/transformed/jetified-react-native-performance-2.1.0-jitsi-10226385/AndroidManifest.xml:12:13-71
+524            android:exported="false"
+524-->[com.facebook.react:react-native-performance:2.1.0-jitsi-10226385] /Users/greelogix/.gradle/caches/transforms-3/c4f4696f39621f98571fa7aaf2208943/transformed/jetified-react-native-performance-2.1.0-jitsi-10226385/AndroidManifest.xml:13:13-37
+525            android:initOrder="200" />
+525-->[com.facebook.react:react-native-performance:2.1.0-jitsi-10226385] /Users/greelogix/.gradle/caches/transforms-3/c4f4696f39621f98571fa7aaf2208943/transformed/jetified-react-native-performance-2.1.0-jitsi-10226385/AndroidManifest.xml:14:13-36
+526
+527        <service
+527-->[com.paytm.easypay:easypay-appinvoke:1.7.3] /Users/greelogix/.gradle/caches/transforms-3/34ecd9b18679338d1b7ccc53c7aa69a4/transformed/jetified-easypay-appinvoke-1.7.3/AndroidManifest.xml:14:9-17:72
+528            android:name="easypay.appinvoke.utils.EasyPayConfigDownloader"
+528-->[com.paytm.easypay:easypay-appinvoke:1.7.3] /Users/greelogix/.gradle/caches/transforms-3/34ecd9b18679338d1b7ccc53c7aa69a4/transformed/jetified-easypay-appinvoke-1.7.3/AndroidManifest.xml:15:13-75
+529            android:exported="false"
+529-->[com.paytm.easypay:easypay-appinvoke:1.7.3] /Users/greelogix/.gradle/caches/transforms-3/34ecd9b18679338d1b7ccc53c7aa69a4/transformed/jetified-easypay-appinvoke-1.7.3/AndroidManifest.xml:16:13-37
+530            android:permission="android.permission.BIND_JOB_SERVICE" />
+530-->[com.paytm.easypay:easypay-appinvoke:1.7.3] /Users/greelogix/.gradle/caches/transforms-3/34ecd9b18679338d1b7ccc53c7aa69a4/transformed/jetified-easypay-appinvoke-1.7.3/AndroidManifest.xml:17:13-69
+531        <service
+531-->[com.paytm.easypay:easypay-appinvoke:1.7.3] /Users/greelogix/.gradle/caches/transforms-3/34ecd9b18679338d1b7ccc53c7aa69a4/transformed/jetified-easypay-appinvoke-1.7.3/AndroidManifest.xml:18:9-22:72
+532            android:name="easypay.appinvoke.utils.AnalyticsService"
+532-->[com.paytm.easypay:easypay-appinvoke:1.7.3] /Users/greelogix/.gradle/caches/transforms-3/34ecd9b18679338d1b7ccc53c7aa69a4/transformed/jetified-easypay-appinvoke-1.7.3/AndroidManifest.xml:19:13-68
+533            android:enabled="true"
+533-->[com.paytm.easypay:easypay-appinvoke:1.7.3] /Users/greelogix/.gradle/caches/transforms-3/34ecd9b18679338d1b7ccc53c7aa69a4/transformed/jetified-easypay-appinvoke-1.7.3/AndroidManifest.xml:20:13-35
+534            android:exported="false"
+534-->[com.paytm.easypay:easypay-appinvoke:1.7.3] /Users/greelogix/.gradle/caches/transforms-3/34ecd9b18679338d1b7ccc53c7aa69a4/transformed/jetified-easypay-appinvoke-1.7.3/AndroidManifest.xml:21:13-37
+535            android:permission="android.permission.BIND_JOB_SERVICE" />
+535-->[com.paytm.easypay:easypay-appinvoke:1.7.3] /Users/greelogix/.gradle/caches/transforms-3/34ecd9b18679338d1b7ccc53c7aa69a4/transformed/jetified-easypay-appinvoke-1.7.3/AndroidManifest.xml:22:13-69
+536
+537        <activity android:name="easypay.appinvoke.AnalyticsManagerInfoDisplayActivity" />
+537-->[com.paytm.easypay:easypay-appinvoke:1.7.3] /Users/greelogix/.gradle/caches/transforms-3/34ecd9b18679338d1b7ccc53c7aa69a4/transformed/jetified-easypay-appinvoke-1.7.3/AndroidManifest.xml:24:9-90
+537-->[com.paytm.easypay:easypay-appinvoke:1.7.3] /Users/greelogix/.gradle/caches/transforms-3/34ecd9b18679338d1b7ccc53c7aa69a4/transformed/jetified-easypay-appinvoke-1.7.3/AndroidManifest.xml:24:19-87
+538
+539        <receiver
+539-->[com.razorpay:checkout:1.6.26] /Users/greelogix/.gradle/caches/transforms-3/66e60c17083b65dbd4c5553a979bdee1/transformed/jetified-checkout-1.6.26/AndroidManifest.xml:40:9-46:20
+540            android:name="com.razorpay.RzpTokenReceiver"
+540-->[com.razorpay:checkout:1.6.26] /Users/greelogix/.gradle/caches/transforms-3/66e60c17083b65dbd4c5553a979bdee1/transformed/jetified-checkout-1.6.26/AndroidManifest.xml:41:13-57
+541            android:exported="false" >
+541-->[com.razorpay:checkout:1.6.26] /Users/greelogix/.gradle/caches/transforms-3/66e60c17083b65dbd4c5553a979bdee1/transformed/jetified-checkout-1.6.26/AndroidManifest.xml:42:13-37
+542            <intent-filter>
+542-->[com.razorpay:checkout:1.6.26] /Users/greelogix/.gradle/caches/transforms-3/66e60c17083b65dbd4c5553a979bdee1/transformed/jetified-checkout-1.6.26/AndroidManifest.xml:43:13-45:29
+543                <action android:name="rzp.device_token.share" />
+543-->[com.razorpay:checkout:1.6.26] /Users/greelogix/.gradle/caches/transforms-3/66e60c17083b65dbd4c5553a979bdee1/transformed/jetified-checkout-1.6.26/AndroidManifest.xml:44:17-65
+543-->[com.razorpay:checkout:1.6.26] /Users/greelogix/.gradle/caches/transforms-3/66e60c17083b65dbd4c5553a979bdee1/transformed/jetified-checkout-1.6.26/AndroidManifest.xml:44:25-62
+544            </intent-filter>
+545        </receiver>
+546
+547        <activity
+547-->[com.razorpay:checkout:1.6.26] /Users/greelogix/.gradle/caches/transforms-3/66e60c17083b65dbd4c5553a979bdee1/transformed/jetified-checkout-1.6.26/AndroidManifest.xml:48:9-60:20
+548            android:name="com.razorpay.CheckoutActivity"
+548-->[com.razorpay:checkout:1.6.26] /Users/greelogix/.gradle/caches/transforms-3/66e60c17083b65dbd4c5553a979bdee1/transformed/jetified-checkout-1.6.26/AndroidManifest.xml:49:13-57
+549            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+549-->[com.razorpay:checkout:1.6.26] /Users/greelogix/.gradle/caches/transforms-3/66e60c17083b65dbd4c5553a979bdee1/transformed/jetified-checkout-1.6.26/AndroidManifest.xml:50:13-83
+550            android:exported="true"
+550-->[com.razorpay:checkout:1.6.26] /Users/greelogix/.gradle/caches/transforms-3/66e60c17083b65dbd4c5553a979bdee1/transformed/jetified-checkout-1.6.26/AndroidManifest.xml:51:13-36
+551            android:theme="@style/CheckoutTheme" >
+551-->[com.razorpay:checkout:1.6.26] /Users/greelogix/.gradle/caches/transforms-3/66e60c17083b65dbd4c5553a979bdee1/transformed/jetified-checkout-1.6.26/AndroidManifest.xml:52:13-49
+552            <intent-filter>
+552-->[com.razorpay:checkout:1.6.26] /Users/greelogix/.gradle/caches/transforms-3/66e60c17083b65dbd4c5553a979bdee1/transformed/jetified-checkout-1.6.26/AndroidManifest.xml:53:13-59:29
+553                <action android:name="android.intent.action.MAIN" />
+553-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:96:17-68
+553-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:96:25-66
+554
+555                <data
+555-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:13-44
+556                    android:host="rzp.io"
+557                    android:scheme="io.rzp" />
+557-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:19-41
+558            </intent-filter>
+559        </activity>
+560
+561        <meta-data
+561-->[com.razorpay:checkout:1.6.26] /Users/greelogix/.gradle/caches/transforms-3/66e60c17083b65dbd4c5553a979bdee1/transformed/jetified-checkout-1.6.26/AndroidManifest.xml:62:9-64:58
+562            android:name="com.razorpay.plugin.googlepay_all"
+562-->[com.razorpay:checkout:1.6.26] /Users/greelogix/.gradle/caches/transforms-3/66e60c17083b65dbd4c5553a979bdee1/transformed/jetified-checkout-1.6.26/AndroidManifest.xml:63:13-61
+563            android:value="com.razorpay.RzpGpayMerged" />
+563-->[com.razorpay:checkout:1.6.26] /Users/greelogix/.gradle/caches/transforms-3/66e60c17083b65dbd4c5553a979bdee1/transformed/jetified-checkout-1.6.26/AndroidManifest.xml:64:13-55
+564
+565        <uses-library
+565-->[androidx.window:window:1.0.0-beta04] /Users/greelogix/.gradle/caches/transforms-3/d40c891ea9992b7d7ba4ef62667a9694/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+566            android:name="androidx.window.extensions"
+566-->[androidx.window:window:1.0.0-beta04] /Users/greelogix/.gradle/caches/transforms-3/d40c891ea9992b7d7ba4ef62667a9694/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+567            android:required="false" />
+567-->[androidx.window:window:1.0.0-beta04] /Users/greelogix/.gradle/caches/transforms-3/d40c891ea9992b7d7ba4ef62667a9694/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+568        <uses-library
+568-->[androidx.window:window:1.0.0-beta04] /Users/greelogix/.gradle/caches/transforms-3/d40c891ea9992b7d7ba4ef62667a9694/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+569            android:name="androidx.window.sidecar"
+569-->[androidx.window:window:1.0.0-beta04] /Users/greelogix/.gradle/caches/transforms-3/d40c891ea9992b7d7ba4ef62667a9694/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+570            android:required="false" />
+570-->[androidx.window:window:1.0.0-beta04] /Users/greelogix/.gradle/caches/transforms-3/d40c891ea9992b7d7ba4ef62667a9694/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+571
+572        <activity
+572-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:22:9-25:72
+573            android:name="com.cashfree.pg.ui.web_checkout.CFPaymentActivity"
+573-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:23:13-77
+574            android:exported="false"
+574-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:24:13-37
+575            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+575-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:25:13-69
+576        <activity
+576-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:26:9-29:66
+577            android:name="com.cashfree.pg.ui.CFResponseHandlerActivity"
+577-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:27:13-72
+578            android:exported="false"
+578-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:28:13-37
+579            android:theme="@style/Theme.AppCompat.Translucent" />
+579-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:29:13-63
+580        <activity
+580-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:30:9-33:66
+581            android:name="com.cashfree.pg.ui.upi.CFUPIPaymentActivity"
+581-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:31:13-71
+582            android:exported="false"
+582-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:32:13-37
+583            android:theme="@style/Theme.AppCompat.Translucent" />
+583-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:33:13-63
+584        <activity
+584-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:34:9-37:66
+585            android:name="com.cashfree.pg.ui.amazonpay.AmazonPayActivity"
+585-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:35:13-74
+586            android:exported="false"
+586-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:36:13-37
+587            android:theme="@style/Theme.AppCompat.Translucent" />
+587-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:37:13-63
+588        <activity
+588-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:38:9-41:66
+589            android:name="com.cashfree.pg.ui.gpay.GooglePayActivity"
+589-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:39:13-69
+590            android:exported="false"
+590-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:40:13-37
+591            android:theme="@style/Theme.AppCompat.Translucent" />
+591-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:41:13-63
+592        <activity
+592-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:42:9-45:66
+593            android:name="com.cashfree.pg.ui.phonepe.CFPhonePayActivity"
+593-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:43:13-73
+594            android:exported="false"
+594-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:44:13-37
+595            android:theme="@style/Theme.AppCompat.Translucent" />
+595-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:45:13-63
+596        <activity
+596-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:46:9-49:72
+597            android:name="com.cashfree.pg.ui.simulator.CFUPITestAppActivity"
+597-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:47:13-77
+598            android:exported="false"
+598-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:48:13-37
+599            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+599-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:49:13-69
+600        <activity
+600-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:50:9-53:66
+601            android:name="com.cashfree.pg.ui.simulator.CFUPITestActivity"
+601-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:51:13-74
+602            android:exported="false"
+602-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:52:13-37
+603            android:theme="@style/Theme.AppCompat.Translucent" />
+603-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:53:13-63
+604
+605        <provider
+605-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:55:9-58:40
+606            android:name="com.cashfree.pg.CashfreeAndroidSdkContentProvider"
+606-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:56:13-77
+607            android:authorities="com.sekho.app.cashfreeandroidsdkcontentprovider"
+607-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:57:13-85
+608            android:exported="false" />
+608-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:58:13-37
+609
+610        <meta-data
+610-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:60:9-62:78
+611            android:name="cashfree_pg_core_auto_initialization_enabled"
+611-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:61:13-72
+612            android:value="@bool/cashfree_pg_core_auto_initialize_enabled" />
+612-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:62:13-75
+613        <meta-data
+613-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:63:9-65:72
+614            android:name="cashfree_pg_core_reporting_enabled"
+614-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:64:13-62
+615            android:value="@bool/cashfree_pg_core_reporting_enabled" />
+615-->[com.cashfree.pg:android-sdk:1.7.28] /Users/greelogix/.gradle/caches/transforms-3/be9fd372fd541c9a73feded7e5475b93/transformed/jetified-android-sdk-1.7.28/AndroidManifest.xml:65:13-69
+616
+617        <activity android:name="com.facebook.CustomTabMainActivity" /> <!-- Needs to be explicitly declared on P+ -->
+617-->[com.facebook.android:facebook-common:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/16693567438a885655b14cc2818fcd58/transformed/jetified-facebook-common-15.0.2/AndroidManifest.xml:38:9-71
+617-->[com.facebook.android:facebook-common:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/16693567438a885655b14cc2818fcd58/transformed/jetified-facebook-common-15.0.2/AndroidManifest.xml:38:19-68
+618        <uses-library
+618-->[com.google.android.gms:play-services-maps:18.1.0] /Users/greelogix/.gradle/caches/transforms-3/0385efa09821d2ce3d7694fc9d23c318/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
+619            android:name="org.apache.http.legacy"
+619-->[com.google.android.gms:play-services-maps:18.1.0] /Users/greelogix/.gradle/caches/transforms-3/0385efa09821d2ce3d7694fc9d23c318/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
+620            android:required="false" />
+620-->[com.google.android.gms:play-services-maps:18.1.0] /Users/greelogix/.gradle/caches/transforms-3/0385efa09821d2ce3d7694fc9d23c318/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
+621
+622        <activity
+622-->[com.google.android.gms:play-services-auth:20.4.0] /Users/greelogix/.gradle/caches/transforms-3/1955c55331649088af5695327f642b42/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:23:9-27:75
+623            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+623-->[com.google.android.gms:play-services-auth:20.4.0] /Users/greelogix/.gradle/caches/transforms-3/1955c55331649088af5695327f642b42/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:24:13-93
+624            android:excludeFromRecents="true"
+624-->[com.google.android.gms:play-services-auth:20.4.0] /Users/greelogix/.gradle/caches/transforms-3/1955c55331649088af5695327f642b42/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:25:13-46
+625            android:exported="false"
+625-->[com.google.android.gms:play-services-auth:20.4.0] /Users/greelogix/.gradle/caches/transforms-3/1955c55331649088af5695327f642b42/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:26:13-37
+626            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+626-->[com.google.android.gms:play-services-auth:20.4.0] /Users/greelogix/.gradle/caches/transforms-3/1955c55331649088af5695327f642b42/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:27:13-72
+627        <!--
+628            Service handling Google Sign-In user revocation. For apps that do not integrate with
+629            Google Sign-In, this service will never be started.
+630        -->
+631        <service
+631-->[com.google.android.gms:play-services-auth:20.4.0] /Users/greelogix/.gradle/caches/transforms-3/1955c55331649088af5695327f642b42/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:33:9-37:51
+632            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+632-->[com.google.android.gms:play-services-auth:20.4.0] /Users/greelogix/.gradle/caches/transforms-3/1955c55331649088af5695327f642b42/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:34:13-89
+633            android:exported="true"
+633-->[com.google.android.gms:play-services-auth:20.4.0] /Users/greelogix/.gradle/caches/transforms-3/1955c55331649088af5695327f642b42/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:35:13-36
+634            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+634-->[com.google.android.gms:play-services-auth:20.4.0] /Users/greelogix/.gradle/caches/transforms-3/1955c55331649088af5695327f642b42/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:36:13-107
+635            android:visibleToInstantApps="true" />
+635-->[com.google.android.gms:play-services-auth:20.4.0] /Users/greelogix/.gradle/caches/transforms-3/1955c55331649088af5695327f642b42/transformed/jetified-play-services-auth-20.4.0/AndroidManifest.xml:37:13-48
+636
+637        <activity
+637-->[com.google.firebase:firebase-auth:21.1.0] /Users/greelogix/.gradle/caches/transforms-3/cf99c3ccad99d474f2aad12eeb8e4b59/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:27:9-44:20
+638            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+638-->[com.google.firebase:firebase-auth:21.1.0] /Users/greelogix/.gradle/caches/transforms-3/cf99c3ccad99d474f2aad12eeb8e4b59/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:28:13-80
+639            android:excludeFromRecents="true"
+639-->[com.google.firebase:firebase-auth:21.1.0] /Users/greelogix/.gradle/caches/transforms-3/cf99c3ccad99d474f2aad12eeb8e4b59/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:29:13-46
+640            android:exported="true"
+640-->[com.google.firebase:firebase-auth:21.1.0] /Users/greelogix/.gradle/caches/transforms-3/cf99c3ccad99d474f2aad12eeb8e4b59/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:30:13-36
+641            android:launchMode="singleTask"
+641-->[com.google.firebase:firebase-auth:21.1.0] /Users/greelogix/.gradle/caches/transforms-3/cf99c3ccad99d474f2aad12eeb8e4b59/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:31:13-44
+642            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+642-->[com.google.firebase:firebase-auth:21.1.0] /Users/greelogix/.gradle/caches/transforms-3/cf99c3ccad99d474f2aad12eeb8e4b59/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:32:13-72
+643            <intent-filter>
+643-->[com.google.firebase:firebase-auth:21.1.0] /Users/greelogix/.gradle/caches/transforms-3/cf99c3ccad99d474f2aad12eeb8e4b59/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:33:13-43:29
+644                <action android:name="android.intent.action.VIEW" />
+644-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:17:13-65
+644-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:17:21-62
+645
+646                <category android:name="android.intent.category.DEFAULT" />
+646-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:113:16-75
+646-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:113:26-72
+647                <category android:name="android.intent.category.BROWSABLE" />
+647-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:114:16-77
+647-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:114:26-74
+648
+649                <data
+649-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:13-44
+650                    android:host="firebase.auth"
+651                    android:path="/"
+652                    android:scheme="genericidp" />
+652-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:19-41
+653            </intent-filter>
+654        </activity>
+655        <activity
+655-->[com.google.firebase:firebase-auth:21.1.0] /Users/greelogix/.gradle/caches/transforms-3/cf99c3ccad99d474f2aad12eeb8e4b59/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:45:9-62:20
+656            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+656-->[com.google.firebase:firebase-auth:21.1.0] /Users/greelogix/.gradle/caches/transforms-3/cf99c3ccad99d474f2aad12eeb8e4b59/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:46:13-79
+657            android:excludeFromRecents="true"
+657-->[com.google.firebase:firebase-auth:21.1.0] /Users/greelogix/.gradle/caches/transforms-3/cf99c3ccad99d474f2aad12eeb8e4b59/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:47:13-46
+658            android:exported="true"
+658-->[com.google.firebase:firebase-auth:21.1.0] /Users/greelogix/.gradle/caches/transforms-3/cf99c3ccad99d474f2aad12eeb8e4b59/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:48:13-36
+659            android:launchMode="singleTask"
+659-->[com.google.firebase:firebase-auth:21.1.0] /Users/greelogix/.gradle/caches/transforms-3/cf99c3ccad99d474f2aad12eeb8e4b59/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:49:13-44
+660            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+660-->[com.google.firebase:firebase-auth:21.1.0] /Users/greelogix/.gradle/caches/transforms-3/cf99c3ccad99d474f2aad12eeb8e4b59/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:50:13-72
+661            <intent-filter>
+661-->[com.google.firebase:firebase-auth:21.1.0] /Users/greelogix/.gradle/caches/transforms-3/cf99c3ccad99d474f2aad12eeb8e4b59/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:51:13-61:29
+662                <action android:name="android.intent.action.VIEW" />
+662-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:17:13-65
+662-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:17:21-62
+663
+664                <category android:name="android.intent.category.DEFAULT" />
+664-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:113:16-75
+664-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:113:26-72
+665                <category android:name="android.intent.category.BROWSABLE" />
+665-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:114:16-77
+665-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:114:26-74
+666
+667                <data
+667-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:13-44
+668                    android:host="firebase.auth"
+669                    android:path="/"
+670                    android:scheme="recaptcha" />
+670-->/Users/greelogix/Downloads/eclass/eclass App/android/app/src/main/AndroidManifest.xml:18:19-41
+671            </intent-filter>
+672        </activity>
+673        <activity
+673-->[com.google.android.gms:play-services-base:18.0.1] /Users/greelogix/.gradle/caches/transforms-3/178039b85cc2e81dac3b48166b0995e4/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+674            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+674-->[com.google.android.gms:play-services-base:18.0.1] /Users/greelogix/.gradle/caches/transforms-3/178039b85cc2e81dac3b48166b0995e4/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+675            android:exported="false"
+675-->[com.google.android.gms:play-services-base:18.0.1] /Users/greelogix/.gradle/caches/transforms-3/178039b85cc2e81dac3b48166b0995e4/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+676            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+676-->[com.google.android.gms:play-services-base:18.0.1] /Users/greelogix/.gradle/caches/transforms-3/178039b85cc2e81dac3b48166b0995e4/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+677        <activity
+677-->[com.facebook.android:audience-network-sdk:6.12.0] /Users/greelogix/.gradle/caches/transforms-3/a4e1e0c4e1849c4352fc3f17947f7fbe/transformed/jetified-audience-network-sdk-6.12.0/AndroidManifest.xml:20:9-24:75
+678            android:name="com.facebook.ads.AudienceNetworkActivity"
+678-->[com.facebook.android:audience-network-sdk:6.12.0] /Users/greelogix/.gradle/caches/transforms-3/a4e1e0c4e1849c4352fc3f17947f7fbe/transformed/jetified-audience-network-sdk-6.12.0/AndroidManifest.xml:21:13-68
+679            android:configChanges="keyboardHidden|orientation|screenSize"
+679-->[com.facebook.android:audience-network-sdk:6.12.0] /Users/greelogix/.gradle/caches/transforms-3/a4e1e0c4e1849c4352fc3f17947f7fbe/transformed/jetified-audience-network-sdk-6.12.0/AndroidManifest.xml:22:13-74
+680            android:exported="false"
+680-->[com.facebook.android:audience-network-sdk:6.12.0] /Users/greelogix/.gradle/caches/transforms-3/a4e1e0c4e1849c4352fc3f17947f7fbe/transformed/jetified-audience-network-sdk-6.12.0/AndroidManifest.xml:23:13-37
+681            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+681-->[com.facebook.android:audience-network-sdk:6.12.0] /Users/greelogix/.gradle/caches/transforms-3/a4e1e0c4e1849c4352fc3f17947f7fbe/transformed/jetified-audience-network-sdk-6.12.0/AndroidManifest.xml:24:13-72
+682
+683        <provider
+683-->[com.facebook.android:audience-network-sdk:6.12.0] /Users/greelogix/.gradle/caches/transforms-3/a4e1e0c4e1849c4352fc3f17947f7fbe/transformed/jetified-audience-network-sdk-6.12.0/AndroidManifest.xml:26:9-29:40
+684            android:name="com.facebook.ads.AudienceNetworkContentProvider"
+684-->[com.facebook.android:audience-network-sdk:6.12.0] /Users/greelogix/.gradle/caches/transforms-3/a4e1e0c4e1849c4352fc3f17947f7fbe/transformed/jetified-audience-network-sdk-6.12.0/AndroidManifest.xml:27:13-75
+685            android:authorities="com.sekho.app.AudienceNetworkContentProvider"
+685-->[com.facebook.android:audience-network-sdk:6.12.0] /Users/greelogix/.gradle/caches/transforms-3/a4e1e0c4e1849c4352fc3f17947f7fbe/transformed/jetified-audience-network-sdk-6.12.0/AndroidManifest.xml:28:13-82
+686            android:exported="false" />
+686-->[com.facebook.android:audience-network-sdk:6.12.0] /Users/greelogix/.gradle/caches/transforms-3/a4e1e0c4e1849c4352fc3f17947f7fbe/transformed/jetified-audience-network-sdk-6.12.0/AndroidManifest.xml:29:13-37
+687        <provider
+687-->[com.google.firebase:firebase-common:20.2.0] /Users/greelogix/.gradle/caches/transforms-3/8cdcc2d3771f6ae79143c66aa17501b8/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:25:9-30:39
+688            android:name="com.google.firebase.provider.FirebaseInitProvider"
+688-->[com.google.firebase:firebase-common:20.2.0] /Users/greelogix/.gradle/caches/transforms-3/8cdcc2d3771f6ae79143c66aa17501b8/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:26:13-77
+689            android:authorities="com.sekho.app.firebaseinitprovider"
+689-->[com.google.firebase:firebase-common:20.2.0] /Users/greelogix/.gradle/caches/transforms-3/8cdcc2d3771f6ae79143c66aa17501b8/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:27:13-72
+690            android:directBootAware="true"
+690-->[com.google.firebase:firebase-common:20.2.0] /Users/greelogix/.gradle/caches/transforms-3/8cdcc2d3771f6ae79143c66aa17501b8/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:28:13-43
+691            android:exported="false"
+691-->[com.google.firebase:firebase-common:20.2.0] /Users/greelogix/.gradle/caches/transforms-3/8cdcc2d3771f6ae79143c66aa17501b8/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:29:13-37
+692            android:initOrder="100" />
+692-->[com.google.firebase:firebase-common:20.2.0] /Users/greelogix/.gradle/caches/transforms-3/8cdcc2d3771f6ae79143c66aa17501b8/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:30:13-36
+693
+694        <receiver
+694-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/greelogix/.gradle/caches/transforms-3/d530dfa0003dcbc76eddbf2647518dc0/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:29:9-33:20
+695            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+695-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/greelogix/.gradle/caches/transforms-3/d530dfa0003dcbc76eddbf2647518dc0/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:30:13-85
+696            android:enabled="true"
+696-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/greelogix/.gradle/caches/transforms-3/d530dfa0003dcbc76eddbf2647518dc0/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:31:13-35
+697            android:exported="false" >
+697-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/greelogix/.gradle/caches/transforms-3/d530dfa0003dcbc76eddbf2647518dc0/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:32:13-37
+698        </receiver>
+699
+700        <service
+700-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/greelogix/.gradle/caches/transforms-3/d530dfa0003dcbc76eddbf2647518dc0/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:35:9-38:40
+701            android:name="com.google.android.gms.measurement.AppMeasurementService"
+701-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/greelogix/.gradle/caches/transforms-3/d530dfa0003dcbc76eddbf2647518dc0/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:36:13-84
+702            android:enabled="true"
+702-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/greelogix/.gradle/caches/transforms-3/d530dfa0003dcbc76eddbf2647518dc0/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:37:13-35
+703            android:exported="false" />
+703-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/greelogix/.gradle/caches/transforms-3/d530dfa0003dcbc76eddbf2647518dc0/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:38:13-37
+704        <service
+704-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/greelogix/.gradle/caches/transforms-3/d530dfa0003dcbc76eddbf2647518dc0/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:39:9-43:72
+705            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+705-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/greelogix/.gradle/caches/transforms-3/d530dfa0003dcbc76eddbf2647518dc0/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:40:13-87
+706            android:enabled="true"
+706-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/greelogix/.gradle/caches/transforms-3/d530dfa0003dcbc76eddbf2647518dc0/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:41:13-35
+707            android:exported="false"
+707-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/greelogix/.gradle/caches/transforms-3/d530dfa0003dcbc76eddbf2647518dc0/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:42:13-37
+708            android:permission="android.permission.BIND_JOB_SERVICE" />
+708-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/greelogix/.gradle/caches/transforms-3/d530dfa0003dcbc76eddbf2647518dc0/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:43:13-69
+709        <!--
+710         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+711         with the application context. This config is merged in with the host app's manifest,
+712         but there can only be one provider with the same authority activated at any given
+713         point; so if the end user has two or more different apps that use Facebook SDK, only the
+714         first one will be able to use the provider. To work around this problem, we use the
+715         following placeholder in the authority to identify each host application as if it was
+716         a completely different provider.
+717        -->
+718        <provider
+718-->[com.facebook.android:facebook-core:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/9c3217633504f2dc0e5757be2a9c7656/transformed/jetified-facebook-core-15.0.2/AndroidManifest.xml:41:9-44:40
+719            android:name="com.facebook.internal.FacebookInitProvider"
+719-->[com.facebook.android:facebook-core:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/9c3217633504f2dc0e5757be2a9c7656/transformed/jetified-facebook-core-15.0.2/AndroidManifest.xml:42:13-70
+720            android:authorities="com.sekho.app.FacebookInitProvider"
+720-->[com.facebook.android:facebook-core:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/9c3217633504f2dc0e5757be2a9c7656/transformed/jetified-facebook-core-15.0.2/AndroidManifest.xml:43:13-72
+721            android:exported="false" />
+721-->[com.facebook.android:facebook-core:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/9c3217633504f2dc0e5757be2a9c7656/transformed/jetified-facebook-core-15.0.2/AndroidManifest.xml:44:13-37
+722
+723        <receiver
+723-->[com.facebook.android:facebook-core:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/9c3217633504f2dc0e5757be2a9c7656/transformed/jetified-facebook-core-15.0.2/AndroidManifest.xml:46:9-52:20
+724            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+724-->[com.facebook.android:facebook-core:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/9c3217633504f2dc0e5757be2a9c7656/transformed/jetified-facebook-core-15.0.2/AndroidManifest.xml:47:13-86
+725            android:exported="false" >
+725-->[com.facebook.android:facebook-core:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/9c3217633504f2dc0e5757be2a9c7656/transformed/jetified-facebook-core-15.0.2/AndroidManifest.xml:48:13-37
+726            <intent-filter>
+726-->[com.facebook.android:facebook-core:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/9c3217633504f2dc0e5757be2a9c7656/transformed/jetified-facebook-core-15.0.2/AndroidManifest.xml:49:13-51:29
+727                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+727-->[com.facebook.android:facebook-core:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/9c3217633504f2dc0e5757be2a9c7656/transformed/jetified-facebook-core-15.0.2/AndroidManifest.xml:50:17-95
+727-->[com.facebook.android:facebook-core:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/9c3217633504f2dc0e5757be2a9c7656/transformed/jetified-facebook-core-15.0.2/AndroidManifest.xml:50:25-92
+728            </intent-filter>
+729        </receiver>
+730        <receiver
+730-->[com.facebook.android:facebook-core:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/9c3217633504f2dc0e5757be2a9c7656/transformed/jetified-facebook-core-15.0.2/AndroidManifest.xml:53:9-59:20
+731            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+731-->[com.facebook.android:facebook-core:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/9c3217633504f2dc0e5757be2a9c7656/transformed/jetified-facebook-core-15.0.2/AndroidManifest.xml:54:13-118
+732            android:exported="false" >
+732-->[com.facebook.android:facebook-core:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/9c3217633504f2dc0e5757be2a9c7656/transformed/jetified-facebook-core-15.0.2/AndroidManifest.xml:55:13-37
+733            <intent-filter>
+733-->[com.facebook.android:facebook-core:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/9c3217633504f2dc0e5757be2a9c7656/transformed/jetified-facebook-core-15.0.2/AndroidManifest.xml:56:13-58:29
+734                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+734-->[com.facebook.android:facebook-core:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/9c3217633504f2dc0e5757be2a9c7656/transformed/jetified-facebook-core-15.0.2/AndroidManifest.xml:57:17-103
+734-->[com.facebook.android:facebook-core:15.0.2] /Users/greelogix/.gradle/caches/transforms-3/9c3217633504f2dc0e5757be2a9c7656/transformed/jetified-facebook-core-15.0.2/AndroidManifest.xml:57:25-100
+735            </intent-filter>
+736        </receiver>
+737
+738        <service
+738-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:41:9-46:35
+739            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+739-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:42:13-88
+740            android:directBootAware="false"
+740-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:43:13-44
+741            android:enabled="@bool/enable_system_alarm_service_default"
+741-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:44:13-72
+742            android:exported="false" />
+742-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:45:13-37
+743        <service
+743-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:47:9-53:35
+744            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+744-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:48:13-84
+745            android:directBootAware="false"
+745-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:49:13-44
+746            android:enabled="@bool/enable_system_job_service_default"
+746-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:50:13-70
+747            android:exported="true"
+747-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:51:13-36
+748            android:permission="android.permission.BIND_JOB_SERVICE" />
+748-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:52:13-69
+749        <service
+749-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:54:9-59:35
+750            android:name="androidx.work.impl.foreground.SystemForegroundService"
+750-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:55:13-81
+751            android:directBootAware="false"
+751-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:56:13-44
+752            android:enabled="@bool/enable_system_foreground_service_default"
+752-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:57:13-77
+753            android:exported="false" />
+753-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:58:13-37
+754
+755        <receiver
+755-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:61:9-66:35
+756            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+756-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:62:13-88
+757            android:directBootAware="false"
+757-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:63:13-44
+758            android:enabled="true"
+758-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:64:13-35
+759            android:exported="false" />
+759-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:65:13-37
+760        <receiver
+760-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:67:9-77:20
+761            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+761-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:68:13-106
+762            android:directBootAware="false"
+762-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:69:13-44
+763            android:enabled="false"
+763-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:70:13-36
+764            android:exported="false" >
+764-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:71:13-37
+765            <intent-filter>
+765-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:73:13-76:29
+766                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+766-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:74:17-87
+766-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:74:25-84
+767                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+767-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:75:17-90
+767-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:75:25-87
+768            </intent-filter>
+769        </receiver>
+770        <receiver
+770-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:78:9-88:20
+771            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+771-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:79:13-104
+772            android:directBootAware="false"
+772-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:80:13-44
+773            android:enabled="false"
+773-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:81:13-36
+774            android:exported="false" >
+774-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:82:13-37
+775            <intent-filter>
+775-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:84:13-87:29
+776                <action android:name="android.intent.action.BATTERY_OKAY" />
+776-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:85:17-77
+776-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:85:25-74
+777                <action android:name="android.intent.action.BATTERY_LOW" />
+777-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:86:17-76
+777-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:86:25-73
+778            </intent-filter>
+779        </receiver>
+780        <receiver
+780-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:89:9-99:20
+781            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+781-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:90:13-104
+782            android:directBootAware="false"
+782-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:91:13-44
+783            android:enabled="false"
+783-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:92:13-36
+784            android:exported="false" >
+784-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:93:13-37
+785            <intent-filter>
+785-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:95:13-98:29
+786                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+786-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:96:17-83
+786-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:96:25-80
+787                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+787-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:97:17-82
+787-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:97:25-79
+788            </intent-filter>
+789        </receiver>
+790        <receiver
+790-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:100:9-109:20
+791            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+791-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:101:13-103
+792            android:directBootAware="false"
+792-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:102:13-44
+793            android:enabled="false"
+793-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:103:13-36
+794            android:exported="false" >
+794-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:104:13-37
+795            <intent-filter>
+795-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:106:13-108:29
+796                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+796-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:107:17-79
+796-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:107:25-76
+797            </intent-filter>
+798        </receiver>
+799        <receiver
+799-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:110:9-121:20
+800            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+800-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:111:13-88
+801            android:directBootAware="false"
+801-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:112:13-44
+802            android:enabled="false"
+802-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:113:13-36
+803            android:exported="false" >
+803-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:114:13-37
+804            <intent-filter>
+804-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:116:13-120:29
+805                <action android:name="android.intent.action.BOOT_COMPLETED" />
+805-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:117:17-79
+805-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:117:25-76
+806                <action android:name="android.intent.action.TIME_SET" />
+806-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:118:17-73
+806-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:118:25-70
+807                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+807-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:119:17-81
+807-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:119:25-78
+808            </intent-filter>
+809        </receiver>
+810        <receiver
+810-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:122:9-131:20
+811            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+811-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:123:13-99
+812            android:directBootAware="false"
+812-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:124:13-44
+813            android:enabled="@bool/enable_system_alarm_service_default"
+813-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:125:13-72
+814            android:exported="false" >
+814-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:126:13-37
+815            <intent-filter>
+815-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:128:13-130:29
+816                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+816-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:129:17-98
+816-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:129:25-95
+817            </intent-filter>
+818        </receiver>
+819        <receiver
+819-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:132:9-142:20
+820            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+820-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:133:13-78
+821            android:directBootAware="false"
+821-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:134:13-44
+822            android:enabled="true"
+822-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:135:13-35
+823            android:exported="true"
+823-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:136:13-36
+824            android:permission="android.permission.DUMP" >
+824-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:137:13-57
+825            <intent-filter>
+825-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:139:13-141:29
+826                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+826-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:140:17-88
+826-->[androidx.work:work-runtime:2.7.0] /Users/greelogix/.gradle/caches/transforms-3/81977e853d381459729bf0b72702be0c/transformed/work-runtime-2.7.0/AndroidManifest.xml:140:25-85
+827            </intent-filter>
+828        </receiver>
+829
+830        <service
+830-->[androidx.room:room-runtime:2.2.5] /Users/greelogix/.gradle/caches/transforms-3/e85cf9dd9787a57704955b644ed392c3/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+831            android:name="androidx.room.MultiInstanceInvalidationService"
+831-->[androidx.room:room-runtime:2.2.5] /Users/greelogix/.gradle/caches/transforms-3/e85cf9dd9787a57704955b644ed392c3/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+832            android:directBootAware="true"
+832-->[androidx.room:room-runtime:2.2.5] /Users/greelogix/.gradle/caches/transforms-3/e85cf9dd9787a57704955b644ed392c3/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+833            android:exported="false" />
+833-->[androidx.room:room-runtime:2.2.5] /Users/greelogix/.gradle/caches/transforms-3/e85cf9dd9787a57704955b644ed392c3/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+834
+835        <activity
+835-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:86:9-89:58
+836            android:name="us.zoom.internal.helper.PrivacyDisclaimerActivity"
+836-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:87:13-77
+837            android:screenOrientation="portrait"
+837-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:88:13-49
+838            android:theme="@style/ZMTheme.Transparent" />
+838-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:89:13-55
+839        <activity
+839-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:90:9-94:58
+840            android:name="com.zipow.videobox.JoinByURLActivity"
+840-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:91:13-64
+841            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode|colorMode"
+841-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:92:13-139
+842            android:launchMode="singleTask"
+842-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:93:13-44
+843            android:theme="@style/ZMTheme.Transparent" />
+843-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:94:13-55
+844        <activity
+844-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:95:9-100:58
+845            android:name="com.zipow.videobox.IntegrationActivity"
+845-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:96:13-66
+846            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode"
+846-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:97:13-129
+847            android:excludeFromRecents="true"
+847-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:98:13-46
+848            android:launchMode="singleTask"
+848-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:99:13-44
+849            android:theme="@style/ZMTheme.Transparent" />
+849-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:100:13-55
+850        <activity
+850-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:101:9-105:59
+851            android:name="com.zipow.videobox.MeetingEndMessageActivity"
+851-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:102:13-72
+852            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode"
+852-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:103:13-129
+853            android:launchMode="singleTask"
+853-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:104:13-44
+854            android:theme="@style/ZMDialog.Transparent" />
+854-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:105:13-56
+855        <activity
+855-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:106:9-110:59
+856            android:name="com.zipow.videobox.JoinMeetingFailActivity"
+856-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:107:13-70
+857            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode"
+857-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:108:13-129
+858            android:launchMode="singleTask"
+858-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:109:13-44
+859            android:theme="@style/ZMDialog.Transparent" />
+859-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:110:13-56
+860        <activity
+860-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:111:9-115:56
+861            android:name="com.zipow.videobox.ConfActivityNormal"
+861-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:112:13-65
+862            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode"
+862-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:113:13-129
+863            android:hardwareAccelerated="true"
+863-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:114:13-47
+864            android:theme="@style/ZMTheme.SubWindow" />
+864-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:115:13-53
+865        <activity
+865-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:116:9-120:56
+866            android:name="com.zipow.videobox.PListActivity"
+866-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:117:13-60
+867            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode"
+867-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:118:13-129
+868            android:hardwareAccelerated="true"
+868-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:119:13-47
+869            android:theme="@style/ZMTheme.SubWindow" />
+869-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:120:13-53
+870        <activity
+870-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:121:9-125:56
+871            android:name="com.zipow.videobox.InMeetingSettingsActivity"
+871-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:122:13-72
+872            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode|colorMode"
+872-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:123:13-139
+873            android:hardwareAccelerated="true"
+873-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:124:13-47
+874            android:theme="@style/ZMTheme.SubWindow" />
+874-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:125:13-53
+875        <activity
+875-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:126:9-129:56
+876            android:name="com.zipow.videobox.CallInActivity"
+876-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:127:13-61
+877            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode|colorMode"
+877-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:128:13-139
+878            android:theme="@style/ZMTheme.SubWindow" />
+878-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:129:13-53
+879        <activity
+879-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:130:9-134:70
+880            android:name="com.zipow.videobox.SimpleActivity"
+880-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:131:13-61
+881            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode|colorMode"
+881-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:132:13-139
+882            android:theme="@style/ZMTheme.SubWindow"
+882-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:133:13-53
+883            android:windowSoftInputMode="stateHidden|adjustResize" />
+883-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:134:13-67
+884        <activity
+884-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:135:9-139:70
+885            android:name="com.zipow.videobox.SimpleInMeetingActivity"
+885-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:136:13-70
+886            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode|colorMode"
+886-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:137:13-139
+887            android:theme="@style/ZMTheme.SubWindow"
+887-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:138:13-53
+888            android:windowSoftInputMode="stateHidden|adjustResize" />
+888-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:139:13-67
+889        <activity
+889-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:140:9-146:36
+890            android:name="com.zipow.videobox.ZmPollingActivity"
+890-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:141:13-64
+891            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode|colorMode"
+891-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:142:13-139
+892            android:hardwareAccelerated="true"
+892-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:143:13-47
+893            android:theme="@style/ZMTheme.SubWindow"
+893-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:144:13-53
+894            android:windowSoftInputMode="stateHidden|adjustResize" />
+894-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:145:13-67
+895        <activity
+895-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:147:9-150:56
+896            android:name="us.zoom.androidlib.app.ZMFileListActivity"
+896-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:148:13-69
+897            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode|colorMode"
+897-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:149:13-139
+898            android:theme="@style/ZMTheme.SubWindow" />
+898-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:150:13-53
+899        <activity
+899-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:151:9-155:56
+900            android:name="com.zipow.videobox.VirtualBackgroundActivity"
+900-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:152:13-72
+901            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode|colorMode"
+901-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:153:13-139
+902            android:hardwareAccelerated="true"
+902-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:154:13-47
+903            android:theme="@style/ZMTheme.SubWindow" />
+903-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:155:13-53
+904
+905        <service
+905-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:157:9-160:51
+906            android:name="com.zipow.videobox.kubi.KubiService"
+906-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:158:13-63
+907            android:exported="false"
+907-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:159:13-37
+908            android:label="@string/zm_app_name" />
+908-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:160:13-48
+909        <service
+909-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:161:9-165:51
+910            android:name="com.zipow.videobox.share.ScreenShareServiceForSDK"
+910-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:162:13-77
+911            android:exported="false"
+911-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:163:13-37
+912            android:foregroundServiceType="mediaProjection"
+912-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:164:13-60
+913            android:label="@string/zm_app_name" />
+913-->[:mobilertc:] /Users/greelogix/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml:165:13-48
+914    </application>
+915
+916</manifest>

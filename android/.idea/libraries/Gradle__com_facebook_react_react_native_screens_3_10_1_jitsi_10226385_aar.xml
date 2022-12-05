@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.react:react-native-screens:3.10.1-jitsi-10226385@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e07ee3732a27915f68f9b5ceb62282bb/transformed/jetified-react-native-screens-3.10.1-jitsi-10226385/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e07ee3732a27915f68f9b5ceb62282bb/transformed/jetified-react-native-screens-3.10.1-jitsi-10226385/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e07ee3732a27915f68f9b5ceb62282bb/transformed/jetified-react-native-screens-3.10.1-jitsi-10226385/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.react/react-native-screens/3.10.1-jitsi-10226385/e523b3b588b1d6d0383db0a5c607085d4b8f4d81/react-native-screens-3.10.1-jitsi-10226385-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

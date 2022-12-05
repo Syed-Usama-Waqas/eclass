@@ -1,0 +1,31 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/greelogix/development/flutter/.pub-cache/hosted/pub.dartlang.org/cashfree_pg-2.0.12+32/android/src/main/AndroidManifest.xml:1:1-9:12
+INJECTED from /Users/greelogix/development/flutter/.pub-cache/hosted/pub.dartlang.org/cashfree_pg-2.0.12+32/android/src/main/AndroidManifest.xml:1:1-9:12
+INJECTED from /Users/greelogix/development/flutter/.pub-cache/hosted/pub.dartlang.org/cashfree_pg-2.0.12+32/android/src/main/AndroidManifest.xml:1:1-9:12
+	package
+		ADDED from /Users/greelogix/development/flutter/.pub-cache/hosted/pub.dartlang.org/cashfree_pg-2.0.12+32/android/src/main/AndroidManifest.xml:3:5-39
+		INJECTED from /Users/greelogix/development/flutter/.pub-cache/hosted/pub.dartlang.org/cashfree_pg-2.0.12+32/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/greelogix/development/flutter/.pub-cache/hosted/pub.dartlang.org/cashfree_pg-2.0.12+32/android/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/greelogix/development/flutter/.pub-cache/hosted/pub.dartlang.org/cashfree_pg-2.0.12+32/android/src/main/AndroidManifest.xml:2:5-51
+	xmlns:android
+		ADDED from /Users/greelogix/development/flutter/.pub-cache/hosted/pub.dartlang.org/cashfree_pg-2.0.12+32/android/src/main/AndroidManifest.xml:1:11-69
+application
+ADDED from /Users/greelogix/development/flutter/.pub-cache/hosted/pub.dartlang.org/cashfree_pg-2.0.12+32/android/src/main/AndroidManifest.xml:4:5-8:19
+	tools:node
+		ADDED from /Users/greelogix/development/flutter/.pub-cache/hosted/pub.dartlang.org/cashfree_pg-2.0.12+32/android/src/main/AndroidManifest.xml:5:5-23
+meta-data#com.google.android.gms.version
+ADDED from /Users/greelogix/development/flutter/.pub-cache/hosted/pub.dartlang.org/cashfree_pg-2.0.12+32/android/src/main/AndroidManifest.xml:6:9-7:69
+	android:value
+		ADDED from /Users/greelogix/development/flutter/.pub-cache/hosted/pub.dartlang.org/cashfree_pg-2.0.12+32/android/src/main/AndroidManifest.xml:7:13-66
+	android:name
+		ADDED from /Users/greelogix/development/flutter/.pub-cache/hosted/pub.dartlang.org/cashfree_pg-2.0.12+32/android/src/main/AndroidManifest.xml:6:20-65
+uses-sdk
+INJECTED from /Users/greelogix/development/flutter/.pub-cache/hosted/pub.dartlang.org/cashfree_pg-2.0.12+32/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/greelogix/development/flutter/.pub-cache/hosted/pub.dartlang.org/cashfree_pg-2.0.12+32/android/src/main/AndroidManifest.xml
+INJECTED from /Users/greelogix/development/flutter/.pub-cache/hosted/pub.dartlang.org/cashfree_pg-2.0.12+32/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/greelogix/development/flutter/.pub-cache/hosted/pub.dartlang.org/cashfree_pg-2.0.12+32/android/src/main/AndroidManifest.xml
+		ADDED from /Users/greelogix/development/flutter/.pub-cache/hosted/pub.dartlang.org/cashfree_pg-2.0.12+32/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/greelogix/development/flutter/.pub-cache/hosted/pub.dartlang.org/cashfree_pg-2.0.12+32/android/src/main/AndroidManifest.xml

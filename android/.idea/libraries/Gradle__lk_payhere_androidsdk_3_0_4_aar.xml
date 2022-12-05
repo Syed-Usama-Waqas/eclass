@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: lk.payhere:androidsdk:3.0.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8f908ffc5bac42f51e3c9fc303e2b1e6/transformed/jetified-androidsdk-3.0.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8f908ffc5bac42f51e3c9fc303e2b1e6/transformed/jetified-androidsdk-3.0.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8f908ffc5bac42f51e3c9fc303e2b1e6/transformed/jetified-androidsdk-3.0.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

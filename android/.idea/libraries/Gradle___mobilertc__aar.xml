@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: :mobilertc:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fb099476444831c859b60100e44f8127/transformed/jetified-mobilertc/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/greelogix/Downloads/eclass/eclass App/build/add_2_calendar/intermediates/res/merged/release/values-fr/values-fr.xml",
+            "map": [
+                {
+                    "source": "/Users/greelogix/.gradle/caches/transforms-3/c42a54246bed627ad296d244d86d4b75/transformed/core-1.6.0/res/values-fr/values-fr.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/greelogix/Downloads/eclass/eclass App/build/add_2_calendar/intermediates/incremental/mergeReleaseResources/merged.dir/values-fr/values-fr.xml",
+            "map": [
+                {
+                    "source": "/Users/greelogix/.gradle/caches/transforms-3/c42a54246bed627ad296d244d86d4b75/transformed/core-1.6.0/res/values-fr/values-fr.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

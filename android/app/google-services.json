@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "124626164522",
+    "project_id": "sekho-7f844",
+    "storage_bucket": "sekho-7f844.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124626164522:android:cf58a10563d4d4a7415c53",
+        "android_client_info": {
+          "package_name": "com.sekho.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124626164522-1gcoklb59agluqmnaa7u48ssvm4uoltm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ9uezbZJZBQxftOb2BvcN4aaBS12XVNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124626164522-1gcoklb59agluqmnaa7u48ssvm4uoltm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "124626164522-6s4easeboo1iem4vhvun2peitob3lq8d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sekho.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
